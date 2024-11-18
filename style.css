@@ -100,9 +100,12 @@ header {
 }
 
 .fachadaHubsfood{
-    border: 1px solid black;
-    height: 200px;
-    background-image: url("imagens/");
+    height: 400px;
+    background-image: url("imagens/fachadaHubsfood.png");
+    background-position: top center; /* Centraliza a imagem */
+    background-size: contain; /* Faz a imagem cobrir toda a área, sem distorcer */
+    background-repeat: no-repeat;
+
 }
 
 /* Responsividade para dispositivos móveis */
