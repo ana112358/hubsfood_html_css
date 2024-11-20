@@ -207,7 +207,7 @@ header {
     }
 
     .Sobre_nos {
-        padding: 0px 30px 30px 0px; /* Adiciona mais padding para não colar nas bordas */
+        padding: 0px 30px 0px 30px; /* Adiciona mais padding para não colar nas bordas */
     }
 }
 
@@ -237,6 +237,6 @@ header {
     }
 
     .Sobre_nos {
-        padding: 0px; /* Menos padding para telas pequenas */
+        padding: 0px 30px 0px 30px; /* Menos padding para telas pequenas */
     }
 }
