@@ -140,11 +140,10 @@ header {
 }
 
 .image-sobreNos img {
-    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
  /* Mantém a proporção da imagem */
     border-radius: 10px; /* Adiciona bordas arredondadas (opcional) */
     ;
-    width: 800px;
+    width: 600px;
 }
 
 .conteudoDireita {
@@ -155,7 +154,6 @@ header {
 }
 .conteudoEsquerda{
     display:block;
-    width:400px;
 }
 
 
