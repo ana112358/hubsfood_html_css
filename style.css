@@ -136,12 +136,14 @@ header {
 
 .image-sobreNos img {
     max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
+ /* Mantém a proporção da imagem */
     border-radius: 10px; /* Adiciona bordas arredondadas (opcional) */
+    ;
+    width: 500px;
 }
 
 .conteudoDireita {
-    width: 50%;
+    width: 500px;
     text-align: left; /* Garante que o texto fique alinhado à esquerda */
 }
 
@@ -149,19 +151,21 @@ header {
 .Sobre_nos h2, .Sobre_nos h1, .Sobre_nos p {
     color: black;
     text-align: justify;  /* Justifica o texto */
-    width: 600px;        /* Garante que o conteúdo ocupe a mesma largura */
-    margin-left: 0;    /* Remove qualquer margem esquerda extra */
-    margin-right:0;   /* Remove qualquer margem direita extra */
+    width: 500px;        /* Garante que o conteúdo ocupe a mesma largura */
+    margin-top: 20px;
 }
 
 .Sobre_nos h2 {
     color: #FF3700;               
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 .Sobre_nos h1 {
     font-weight: bold;           
-    font-size: 20px;
+    font-size: 35px;
+
 }
 
 .Sobre_nos p {
@@ -173,6 +177,23 @@ header {
 
 /* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
+    .Sobre_nos {
+        flex-direction: column; /* Empilha o conteúdo verticalmente */
+        width: 90%; /* Ajusta a largura para caber melhor na tela */
+    }
+
+    .image-sobreNos {
+        justify-content: center; /* Centraliza a imagem em telas menores */
+    }
+
+    .image-sobreNos img {
+        width: 80%; /* Reduz o tamanho da imagem para caber na tela */
+    }
+
+    .conteudoDireita {
+        width: 100%; /* Permite que o texto ocupe toda a largura disponível */
+        text-align: justify; /* Justifica o texto para melhorar a leitura */
+    }
     .main-navigation {
         flex-wrap: wrap;
         justify-content: space-between;
