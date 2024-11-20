@@ -28,10 +28,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
 }
 
 .main-navigation img {
-    height: 75px; /* Ajuste a altura da logo conforme necessário */
+    height: 75px; /* Ajusta a altura da logo*/
     margin-right: 20px;
 }
 
@@ -118,22 +119,23 @@ header {
 .Sobre_nos { 
     height: 470px;
     background-image: url("imagens/fundoSobreNos.png");
-    background-position: center center; /* Centraliza a imagem */
+    background-position: top center; /* Centraliza a imagem */
     background-size: contain; /* Faz a imagem cobrir toda a área */
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items:end; /* Alinha todo o conteúdo à direita */
-    padding: 0 20px;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+   
 }
 
 .Sobre_nos h2, .Sobre_nos h1, .Sobre_nos p {
     color: black;
     text-align: justify;  /* Justifica o texto */
-    width: 300px;        /* Garante que o conteúdo ocupe a mesma largura */
+    width: 400px;        /* Garante que o conteúdo ocupe a mesma largura */
     margin-left: 0;    /* Remove qualquer margem esquerda extra */
-    margin-right: 300px;   /* Remove qualquer margem direita extra */
+    margin-right:0;   /* Remove qualquer margem direita extra */
 }
 
 .Sobre_nos h2 {
