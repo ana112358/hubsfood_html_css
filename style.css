@@ -128,7 +128,7 @@ header {
     align-items: center; /* Alinha verticalmente no centro */
     gap: 20px; /* Adiciona espaçamento entre as divs */
     padding: 20px; /* Espaço interno na seção */
-    width: 900px;
+    width: 70%;
     margin: 0 auto;
 
 }
@@ -197,13 +197,14 @@ header {
     font-weight: bold; /* Deixa o texto em negrito */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
-    margin-top: 15px;
+    margin-top: 5px;
 }
 
 
 /* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
     .Sobre_nos {
+        margin-top: -200px;
         flex-direction: column; /* Empilha o conteúdo verticalmente */
         width: 90%; /* Ajusta a largura para caber melhor na tela */
     }
@@ -217,8 +218,11 @@ header {
     }
 
     .conteudoDireita {
-        width: 100%; /* Permite que o texto ocupe toda a largura disponível */
+        width: 400px; /* Permite que o texto ocupe toda a largura disponível */
         text-align: justify; /* Justifica o texto para melhorar a leitura */
+    }
+    .conteudoEsquerda{
+        width: 400px;
     }
     .main-navigation {
         flex-wrap: wrap;
