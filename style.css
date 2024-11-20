@@ -28,11 +28,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    align-content: center;
 }
 
 .main-navigation img {
-    height: 75px; /* Ajusta a altura da logo*/
+    height: 75px; /* Ajuste a altura da logo */
     margin-right: 20px;
 }
 
@@ -110,6 +109,7 @@ header {
 }
 .fachadaSobre{
     height: 400px;
+    width: auto;
     background-image: url("imagens/fachadaSobreNos.png");
     background-position: top center; /* Centraliza a imagem */
     background-size: contain; /* Faz a imagem cobrir toda a área, sem distorcer */
@@ -118,6 +118,7 @@ header {
 }
 .Sobre_nos { 
     height: 470px;
+    width: auto;
     background-image: url("imagens/fundoSobreNos.png");
     background-position: top center; /* Centraliza a imagem */
     background-size: contain; /* Faz a imagem cobrir toda a área */
@@ -134,7 +135,7 @@ header {
     color: black;
     text-align: justify;  /* Justifica o texto */
     width: 400px;        /* Garante que o conteúdo ocupe a mesma largura */
-    margin-left: 0;    /* Remove qualquer margem esquerda extra */
+    margin-left: 500px;    /* Remove qualquer margem esquerda extra */
     margin-right:0;   /* Remove qualquer margem direita extra */
 }
 
