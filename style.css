@@ -161,7 +161,7 @@ header {
 
 .Sobre_nos h2, .Sobre_nos h1, .Sobre_nos p {
     color: black;
-    width: 500px;        /* Garante que o conteúdo ocupe a mesma largura */
+    width: 400px;        /* Garante que o conteúdo ocupe a mesma largura */
     margin-top: 20px;
 }
 .Sobre_nos p{
