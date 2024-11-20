@@ -125,10 +125,22 @@ header {
     background-size: contain; /* Faz a imagem cobrir toda a área */
     background-repeat: no-repeat;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: flex-start;
    
+}
+
+.Sobre_nos .image-container {
+    flex-shrink: 0;  /* Impede que a imagem encolha */
+    width: 20%;  /* Ajuste o tamanho da imagem */
+    height: 20%;  /* Ajuste o tamanho da imagem */
+}
+
+.Sobre_nos .image-container img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;  /* Garantir que a imagem se ajuste corretamente ao contêiner */
 }
 
 .Sobre_nos h2, .Sobre_nos h1, .Sobre_nos p {
