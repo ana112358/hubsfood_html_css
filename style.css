@@ -11,7 +11,6 @@ body {
     background-color: #FFF;
 }
 main{
-    width: 70%;
     margin: 0 auto;
 }
 
@@ -125,7 +124,8 @@ footer {
 
 /* Seção de Fachada*/
 .fachada{
-    height: 400px;
+    height: 450px;
+    width: 100%;
     background-position: top center; /* Centraliza a imagem */
     background-size: contain; /* Faz a imagem cobrir toda a área, sem distorcer */
     background-repeat: no-repeat;
