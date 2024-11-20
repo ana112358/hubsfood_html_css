@@ -99,6 +99,7 @@ header {
     object-fit: cover;
 }
 
+/* Seção de Fachada*/
 .fachadaHubsfood{
     height: 400px;
     background-image: url("imagens/fachadaHubsfood.png");
@@ -109,16 +110,16 @@ header {
 }
 .fachadaSobre{
     height: 400px;
-    width: auto;
     background-image: url("imagens/fachadaSobreNos.png");
     background-position: top center; /* Centraliza a imagem */
     background-size: contain; /* Faz a imagem cobrir toda a área, sem distorcer */
     background-repeat: no-repeat;
 
 }
+
+/*Sobre nós*/
 .Sobre_nos { 
-    height: 470px;
-    width: auto;
+    height: 400px;
     background-image: url("imagens/fundoSobreNos.png");
     background-position: top center; /* Centraliza a imagem */
     background-size: contain; /* Faz a imagem cobrir toda a área */
@@ -126,16 +127,15 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    align-content: center;
+    justify-content: flex-start;
    
 }
 
 .Sobre_nos h2, .Sobre_nos h1, .Sobre_nos p {
     color: black;
     text-align: justify;  /* Justifica o texto */
-    width: 400px;        /* Garante que o conteúdo ocupe a mesma largura */
-    margin-left: 500px;    /* Remove qualquer margem esquerda extra */
+    width: 600px;        /* Garante que o conteúdo ocupe a mesma largura */
+    margin-left: 0;    /* Remove qualquer margem esquerda extra */
     margin-right:0;   /* Remove qualquer margem direita extra */
 }
 
@@ -170,7 +170,7 @@ header {
         position: absolute;
         top: 70px;
         left: 0;
-        width: 100%;
+        width: 90%;
         background-color: #FFDED5;
         padding: 20px;
     }
@@ -198,6 +198,17 @@ header {
     .user-section {
         display: none;
     }
+
+    /* Sobre nós */
+    .Sobre_nos h2, .Sobre_nos h1, .Sobre_nos p {
+        width: 80%; /* Aumenta a largura para ocupar mais espaço disponível */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .Sobre_nos {
+        padding: 0px 30px 30px 0px; /* Adiciona mais padding para não colar nas bordas */
+    }
 }
 
 /* Responsividade para dispositivos muito pequenos (smartphones) */
@@ -205,5 +216,27 @@ header {
     .login-button {
         padding: 8px 10px;
         font-size: 14px;
+    }
+
+    /* Logo */
+    .main-navigation img {
+        height: 50px;
+    }
+
+    /* Ajustes na navegação para dispositivos móveis */
+    .nav-links {
+        position: static; /* Reverte a posição */
+        flex-direction: row; /* Ajusta a direção para linha no mobile */
+    }
+
+    /* Sobre nós */
+    .Sobre_nos h2, .Sobre_nos h1, .Sobre_nos p {
+        font-size: 14px; /* Reduz o tamanho da fonte para caber melhor na tela */
+        width: 90%; /* Quase ocupa toda a largura disponível */
+        
+    }
+
+    .Sobre_nos {
+        padding: 0px; /* Menos padding para telas pequenas */
     }
 }
