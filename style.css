@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Garamond', 'Georgia', serif;
     background-color: #FFF;
 }
 
@@ -107,6 +107,51 @@ header {
     background-repeat: no-repeat;
 
 }
+.fachadaSobre{
+    height: 400px;
+    background-image: url("imagens/fachadaSobreNos.png");
+    background-position: top center; /* Centraliza a imagem */
+    background-size: contain; /* Faz a imagem cobrir toda a área, sem distorcer */
+    background-repeat: no-repeat;
+
+}
+.Sobre_nos { 
+    height: 470px;
+    background-image: url("imagens/fundoSobreNos.png");
+    background-position: center center; /* Centraliza a imagem */
+    background-size: contain; /* Faz a imagem cobrir toda a área */
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:end; /* Alinha todo o conteúdo à direita */
+    padding: 0 20px;
+}
+
+.Sobre_nos h2, .Sobre_nos h1, .Sobre_nos p {
+    color: black;
+    text-align: justify;  /* Justifica o texto */
+    width: 300px;        /* Garante que o conteúdo ocupe a mesma largura */
+    margin-left: 0;    /* Remove qualquer margem esquerda extra */
+    margin-right: 300px;   /* Remove qualquer margem direita extra */
+}
+
+.Sobre_nos h2 {
+    color: #FF3700;               
+    font-size: 15px;
+}
+
+.Sobre_nos h1 {
+    font-weight: bold;           
+    font-size: 20px;
+}
+
+.Sobre_nos p {
+    color: black;                
+    font-size: 17px;
+    max-width: 100%;
+}
+
 
 /* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
