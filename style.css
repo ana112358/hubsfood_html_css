@@ -118,30 +118,33 @@ header {
 }
 
 /*Sobre nós*/
-.Sobre_nos { 
-    height: 400px;
-    background-image: url("imagens/fundoSobreNos.png");
-    background-position: top center; /* Centraliza a imagem */
-    background-size: contain; /* Faz a imagem cobrir toda a área */
-    background-repeat: no-repeat;
+.Sobre_nos {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-   
+    justify-content: center; /* Centraliza o conteúdo como um todo */
+    align-items: center; /* Alinha verticalmente no centro */
+    gap: 20px; /* Adiciona espaçamento entre as divs */
+    padding: 20px; /* Espaço interno na seção */
+    width: 70%;
+    margin: 0 auto;
 }
 
-.Sobre_nos .image-container {
-    flex-shrink: 0;  /* Impede que a imagem encolha */
-    width: 20%;  /* Ajuste o tamanho da imagem */
-    height: 20%;  /* Ajuste o tamanho da imagem */
+.image-sobreNos {
+    flex: 2; /* Permite que a imagem ocupe parte do espaço disponível */
+    display: flex;
+    justify-content: flex-start; /* Alinha a imagem à esquerda da div */
 }
 
-.Sobre_nos .image-container img {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;  /* Garantir que a imagem se ajuste corretamente ao contêiner */
+.image-sobreNos img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Adiciona bordas arredondadas (opcional) */
 }
+
+.conteudoDireita {
+    width: 50%;
+    text-align: left; /* Garante que o texto fique alinhado à esquerda */
+}
+
 
 .Sobre_nos h2, .Sobre_nos h1, .Sobre_nos p {
     color: black;
