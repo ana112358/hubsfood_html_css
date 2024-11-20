@@ -86,7 +86,7 @@ header {
     font-weight: 700;
 }
 
-.profile-picture {
+.profile-pict ure {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -99,22 +99,22 @@ header {
     object-fit: cover;
 }
 
+
 /* Seção de Fachada*/
-.fachadaHubsfood{
+.fachada{
     height: 400px;
-    background-image: url("imagens/fachadaHubsfood.png");
     background-position: top center; /* Centraliza a imagem */
     background-size: contain; /* Faz a imagem cobrir toda a área, sem distorcer */
     background-repeat: no-repeat;
 
 }
-.fachadaSobre{
-    height: 400px;
-    background-image: url("imagens/fachadaSobreNos.png");
-    background-position: top center; /* Centraliza a imagem */
-    background-size: contain; /* Faz a imagem cobrir toda a área, sem distorcer */
-    background-repeat: no-repeat;
 
+.fachadaHubsfood{
+    background-image: url("imagens/fachadaHubsfood.png");
+}
+
+.fachadaSobre{
+    background-image: url("imagens/fachadaSobreNos.png");
 }
 
 /*Sobre nós*/
