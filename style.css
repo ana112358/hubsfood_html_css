@@ -27,6 +27,25 @@ header {
     padding: 20px 0;
 }
 
+/* Estilo do footer */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer {
+    background-color: #FFDED5;
+}
+
+.footer-hubLogo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px; /* Ajuste a altura da logo */
+    margin-right: 20px;
+}
+
 /* Navegação principal */
 .main-navigation {
     display: flex;
