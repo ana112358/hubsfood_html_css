@@ -128,7 +128,7 @@ header {
     align-items: center; /* Alinha verticalmente no centro */
     gap: 20px; /* Adiciona espaçamento entre as divs */
     padding: 20px; /* Espaço interno na seção */
-    width: 70%;
+    width: 900px;
     margin: 0 auto;
 
 }
