@@ -10,6 +10,10 @@ body {
     font-family: 'Garamond', 'Georgia', serif;
     background-color: #FFF;
 }
+main{
+    width: 70%;
+    margin: 0 auto;
+}
 
 /* Estilo do header */
 .header-container {
@@ -126,6 +130,7 @@ header {
     padding: 20px; /* Espaço interno na seção */
     width: 70%;
     margin: 0 auto;
+
 }
 
 .image-sobreNos {
@@ -139,27 +144,35 @@ header {
  /* Mantém a proporção da imagem */
     border-radius: 10px; /* Adiciona bordas arredondadas (opcional) */
     ;
-    width: 500px;
+    width: 800px;
 }
 
 .conteudoDireita {
-    width: 500px;
-    text-align: left; /* Garante que o texto fique alinhado à esquerda */
+    position:relative;
+	display:block;
+	float:right;
+	width:400px;
+}
+.conteudoEsquerda{
+    display:block;
+    width:400px;
 }
 
 
 .Sobre_nos h2, .Sobre_nos h1, .Sobre_nos p {
     color: black;
-    text-align: justify;  /* Justifica o texto */
     width: 500px;        /* Garante que o conteúdo ocupe a mesma largura */
     margin-top: 20px;
+}
+.Sobre_nos p{
+    text-align: justify;
 }
 
 .Sobre_nos h2 {
     color: #FF3700;               
     font-size: 20px;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .Sobre_nos h1 {
@@ -172,6 +185,19 @@ header {
     color: black;                
     font-size: 17px;
     max-width: 100%;
+}
+
+.verMais {
+    background-color: #FA6666; 
+    color: #fff; /* Cor do texto branca */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 14px; /* Tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+    margin-top: 15px;
 }
 
 
