@@ -31,6 +31,7 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    
 }
 
 footer {
@@ -41,9 +42,49 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px; /* Ajuste a altura da logo */
+    gap: 200px;
+    
+}
+
+.logoInferior img{
+    height: 200px; /* Ajuste a altura da logo */
     margin-right: 20px;
 }
+
+.footer-links, .footer-contatos{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+.footer-links h1, .footer-contatos h1 {
+    color: #FF3700;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+    padding: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.footer-links img, .footer-contatos img{
+    /*text-align: left;*/
+}
+
+.footer-links a, .footer-contatos p{
+    color: #FF7A55;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+    padding: 15px;
+    font-weight: bold;
+}
+
+
+
 
 /* Navegação principal */
 .main-navigation {
