@@ -1,0 +1,70 @@
+/* Estilos para o modal */
+.modal {
+    display: flex; /* Utiliza Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    position: fixed; /* Fixa a posição em relação à tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    z-index: 1000; /* Sobrepõe outros elementos 
+    */
+    color: grey;
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    display: flex; /* Utiliza Flexbox */
+    flex-direction: column; /* Coloca os elementos um abaixo do outro */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative; /* Para posicionar o botão de fechar */
+}
+
+.modal-content h3 a{
+    color: gray;
+}
+
+/* Botão de fechar o modal */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilos adicionais para inputs e botões */
+.modal-content input[type="text"], 
+.modal-content input[type="password"] {
+    width: 90%; /* Ocupa toda a largura disponível */
+    padding: 10px;
+    margin: 10px 0; /* Espaçamento entre os campos */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.modal-content button {
+    width: 40%; /* Botão ocupa toda a largura */
+    padding: 10px;
+    margin: 10px 0; /* Espaçamento entre os botões */
+    background-color: #FF7A55;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content h2, .modal-content h3 {
+    margin-bottom: 15px; /* Espaçamento inferior */
+}
+
