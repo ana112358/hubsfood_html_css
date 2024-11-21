@@ -194,7 +194,7 @@ footer {
 
 .Sobre_nos h1 {
     font-weight: bold;           
-    font-size: 35px;
+    font-size: 2em;
 
 }
 
@@ -224,6 +224,9 @@ footer {
         margin-top: -200px;
         flex-direction: column; /* Empilha o conteúdo verticalmente */
         width: 90%; /* Ajusta a largura para caber melhor na tela */
+    }
+    .fachada{
+        height: 200px;
     }
 
     .image-sobreNos {
