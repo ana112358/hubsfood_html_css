@@ -34,11 +34,11 @@
     position: relative;
     background-color: #f05033;
     font-weight: 1000;
-    transform: translateY(-110px); /* Ajuste fino para centralizar */
+    transform: translateY(-120px); /* Ajuste fino para centralizar */
     color: white; /* Cor do texto */
     border: none; /* Sem borda */
     padding: 10px 15px; /* Tamanho dos botões */
-    font-size: 18px; /* Tamanho da fonte */
+    font-size: 15px; /* Tamanho da fonte */
     cursor: pointer; /* Cursor em forma de mão */
     border-radius: 50%; /* Botões redondos */
     z-index: 10; /* Garantir que estejam acima do carrossel */
@@ -71,6 +71,6 @@
   @media (max-width: 768px) {
     .custom-prev, .custom-next {
       padding: 8px 16px;
-      font-size: 14px;
+      font-size: 12px;
     }
   }

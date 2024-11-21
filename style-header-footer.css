@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Garamond', 'Georgia', serif;
+    font-family: 'Open Sans', sans-serif;
     list-style: none;
 }
 
@@ -52,7 +52,7 @@ body {
 .header a {
     color: #FF7A55;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     padding: 5px 5px;
     transition: background-color 0.3s;
     font-weight: bold;
@@ -101,8 +101,8 @@ button {
     border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 button:hover {
@@ -135,7 +135,7 @@ button:hover {
 .footer-header {
     color: #FF3700;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     padding: 5px 10px;
     transition: background-color 0.3s;
     font-weight: bold;
@@ -151,7 +151,7 @@ button:hover {
 .footer span, .footer a {
     color: #FF7A55;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 12px;
     padding-right: 10px;
     transition: background-color 0.3s;
     font-weight: bold;
