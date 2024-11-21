@@ -7,18 +7,16 @@
 }
 
 body {
-    font-family: 'Garamond', 'Georgia', serif;
     background-color: #FFF;
 }
 main{
-    margin: 0 auto;
+    margin: 0 auto;/*Para o conteúdo ficar alinhado no meio*/
 }
 
-/* Estilo do header */
+/* Estilo do header/cabeçalho */
 .header-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+
+    margin: 0 auto; /*Para o conteúdo do menu se alinhar no meio*/ 
 }
 
 header {
@@ -69,9 +67,6 @@ footer {
     text-align: left;
 }
 
-.footer-links img, .footer-contatos img{
-    /*text-align: left;*/
-}
 
 .footer-links a, .footer-contatos p{
     color: #FF7A55;
@@ -86,7 +81,7 @@ footer {
 
 
 
-/* Navegação principal */
+/* Navegação principal/ menu */
 .main-navigation {
     display: flex;
     justify-content: space-between;
@@ -165,7 +160,7 @@ footer {
 
 /* Seção de Fachada*/
 .fachada{
-    height: 450px;
+    height: 400px;
     width: 100%;
     background-position: top center; /* Centraliza a imagem */
     background-size: contain; /* Faz a imagem cobrir toda a área, sem distorcer */
@@ -185,6 +180,7 @@ footer {
 .Sobre_nos {
     display: flex;
     justify-content: center; /* Centraliza o conteúdo como um todo */
+    flex-direction: row;
     align-items: center; /* Alinha verticalmente no centro */
     gap: 20px; /* Adiciona espaçamento entre as divs */
     padding: 20px; /* Espaço interno na seção */
@@ -207,10 +203,9 @@ footer {
 }
 
 .conteudoDireita {
-    position:relative;
-	display:block;
-	float:right;
-	width:400px;
+    flex: 1;
+	max-width: 400px; /* Limita a largura máxima */
+	 width: 100%;
 }
 .conteudoEsquerda{
     display:block;
@@ -335,6 +330,7 @@ footer {
 
     .Sobre_nos {
         padding: 0px 30px 0px 30px; /* Adiciona mais padding para não colar nas bordas */
+        margin-top: 5%;
     }
 }
 
@@ -365,5 +361,6 @@ footer {
 
     .Sobre_nos {
         padding: 0px 30px 0px 30px; /* Menos padding para telas pequenas */
+        margin-top: 50px;
     }
 }
