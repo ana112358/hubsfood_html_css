@@ -122,6 +122,7 @@ button:hover {
     justify-content: flex-start;
     height: 100h;
     gap: 5px;
+    
 }
 
 .footer div {
@@ -130,6 +131,7 @@ button:hover {
 
 .footer img {
     height: 20px;
+    transform: translateY(5px);
 }
 
 .footer-header {

@@ -158,12 +158,43 @@
     height: 200px;
 }
 
+.external-contatos{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center;
+    gap: 30px;               
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+
+.internal-contatos{
+    flex: 1 1 calc(50% - 30px);
+    background-color: #FFDED5;  
+    color: #9D9191;              
+    text-align: center;        
+    padding: 20px;              
+    border-radius: 10px; 
+}
+
+.internal-contatos img {
+    transform: translateY(5px);
+}
+
+.internal-contatos h2 {
+    font-size: 20px;
+}
+
+
 .body-carousel {
     padding-top: 50px;
     padding-bottom: 30px;
-    max-width: 600px; /* Largura máxima */
-    margin: 0 auto; /* Centralizar o carrossel */
-    overflow: hidden; /* Ocultar qualquer conteúdo que ultrapasse os limites */
+    max-width: 600px; 
+    margin: 0 auto; 
+    overflow: hidden; 
 }
 
 .body-carousel h3 {
