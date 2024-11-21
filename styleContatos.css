@@ -21,6 +21,13 @@
     color: #858282;
     grid-column: span 2; /* Ocupa duas colunas */
     font-size: 2em;
+    margin-bottom: 0;
+}
+/*Icones*/
+.fas {
+    font-size: 20px; /* Tamanho do ícone */
+    color: #FF5733; /* Cor do ícone */
+    margin-right: 10px; /* Espaçamento à direita */
 }
 
 /* Estilo das caixas */
@@ -33,6 +40,7 @@
     border: 1px solid #ccc; /* Borda para separação */
     padding: 20px;
     border-radius: 8px;
+    margin-top: 5px;
 }
 
 /* Estilo para os textos dentro das caixas */
