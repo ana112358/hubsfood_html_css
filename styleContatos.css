@@ -21,7 +21,6 @@
     color: #858282;
     grid-column: span 2; /* Ocupa duas colunas */
     font-size: 2em;
-    margin-bottom: 0;
 }
 /*Icones*/
 .fas {
@@ -90,7 +89,7 @@
             "caixa4";
         grid-template-columns: 1fr; /* Uma coluna para telas menores */
         grid-template-rows: auto; /* Ajusta automaticamente as linhas */
-        width: 100%; /* Ajusta a largura para caber na tela */
+        width: 70%; /* Ajusta a largura para caber na tela */
         height: auto; /* Ajusta a altura automaticamente */
     }
    
