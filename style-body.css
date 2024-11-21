@@ -52,25 +52,110 @@
 .body-about h4 {
     color: #FF7A55;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     margin: 5px;
+    text-align: justify;
 }
 
-.body-about h2 {
+.body-about h2, .whychoose  h2, .aboutMore h2{
     color: #FF3700;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 1000;
     margin: 5px;
+    text-align: justify;
 }
 
-.body-about p {
+.body-about p, .whychoose p, .aboutMore p {
     color: #9D9191;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 17px;
     margin: 5px;
     text-align: justify;
+    padding-top: 5px;
+}
+
+.whychoose{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 700px;
+    margin: 10px auto;
+    padding-top: 40px;
+}
+
+.whychoose img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width:800px;
+}
+
+.aboutMore{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    gap: 50px;
+    width: 700px;
+    margin: 10px auto;
+    padding-bottom: 50px;
+}
+
+.aboutMore div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.aboutMore img{
+    width:80px;
+}
+
+.nossoTime{
+    background-image: url("imagens/sobreNosFundoNossoTime.png");
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    padding-top: 150px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 0px auto;
+    padding-bottom: 50px;
+}
+
+.nossoTime div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.legend {
+    background-color: #f9f9f9;
+    box-shadow: inset 0 0 0 1px #ddd;
+    border-radius: 0;
+    color: #FF3700;
+    font-weight: 700;
+}
+
+.nossoTime img {
+    height: 200px;
 }
 
 .body-carousel {
