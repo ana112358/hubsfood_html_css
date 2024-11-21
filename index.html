@@ -3,60 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="style-header-footer.css">
+    <link rel="stylesheet" href="style-body.css">
+    <link rel="stylesheet" href="style-carousel.css">
+
+    <script src="script-carousel.js" defer></script>
+    
     <title>HubsFood</title>
 </head>
+
 <body>
 
-    <header>
-        <div class="header-container">
-            <nav class="main-navigation">
+    <div class="header container">
+
+        <div class="container">
+            <div>
                 <img src="imagens/logoMenuSuperior.png" alt="">
-                <ul class="nav-links">
+            </div>
+            <div>
+                <ul>
                     <li><a href="index.html">Início</a></li>
                     <li><a href="hubs.html">Hubs</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="contatos.html">Contatos</a></li>
                 </ul>
-                <div class="user-section">
-                    <button class="login-button">Logar</button>
-                    <div class="profile-picture">
-                        <img src="imagens/User.png" alt="Foto de Perfil">
-                    </div>
-                </div>
-                <div class="mobile-menu-icon" onclick="toggleMenu()">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                
-            </nav>
+            </div>
         </div>
-    </header>
+
+        <div class="user">
+            <button>Logar</button>
+            <img src="imagens/User.png" alt="Foto de Perfil">
+        </div>
+
+    </div>
+
+    <div class="main">
+
+        <div class="empty"></div>
+
+        <div class="body-search">
+            <div><img src="imagens/pinLocation.png" alt=""><span>Pesquise o seu hub aqui!</span></div>
+            <div><input type="search"></div>
+            <div><button>Buscar</button></div>
+        </div>
+
+        <div class="body-about">
+            <div><img src="imagens/sobreNosDescricao.png" alt=""></div>
+            <div>
+                <h4>Sobre nós...</h4>
+                <h2>O Seu Centralizador de Cardápios</h2>
+                <p>O HubsFood centraliza os cardápios de praças de alimentação, permitindo que os clientes acessem menus e façam pedidos com facilidade, enquanto os restaurantes gerenciam tudo de forma simples e eficiente.</p>
+            </div>
+        </div>
 
 
-    <main>
+        <div class="body-carousel">
+            <h3>Hubs Cadastrados</h3>
+            <div class="owl-carousel">
+                <!--ALTERAR OS LINKS-->
+                    <div>
+                        <a href="https://midwaymall.com.br/"><img src="imagens/icon_midway.png" alt="Midway Mall Icon"></a>
+                        <span>Midway Mall</span>
+                    </div>
 
-        <section class="pesquisaHubs">
-          <div class="fachadaHubsfood fachada">
+                    <div>
+                        <a href="https://midwaymall.com.br/"><img src="imagens/icon_natalShopping.png" alt="Natal Shopping Icon"></a>
+                        <span>Natal Shopping</span>
+                    </div>
 
-          </div>  
+                    <div>
+                        <a href="https://midwaymall.com.br/"><img src="imagens/icon_partage.png" alt="Partage Shopping Icon"></a>
+                        <span>Partage Norte Shopping</span>
+                    </div>
+                    <div>
+                        <a href="https://midwaymall.com.br/"><img src="imagens/icon_praiaShopping.png" alt="Praia Shopping Icon"></a>
+                        <span>Praia Shopping</span>
+                    </div>
+              </div>
+              <div class="custom-nav">
+                <button class="custom-prev">← </button>
+                <button class="custom-next"> →</button>
+              </div>
 
-        </section>
 
-        <section class="sobreNos">
-            
-        </section>
+        </div>
 
-        <section class="hubs_cadastrado">
-            <!--Carrossel-->
-        </section>
-    </main>
+        
+    </div>
 
-    <footer>
+    <div class="footer container">
+        <div class="logo">
+            <img src="imagens/logoInferior.png" alt="">
+        </div>
 
+        <div class="container">
+            <div>
+                <ul>
+                    <li class="footer-header">Links:</li>
+                    <li><img src="imagens/logoInstagram.png" alt=""><a href="https://www.instagram.com/"><span>Instagram</span></a></li>
+                    <li><img src="imagens/logoPinterest.png" alt=""><a href="https://br.pinterest.com/"><span>Pinterest</span></a> </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="footer-header">Contatos:</li>
+                    <li><img src="imagens/pinLocation.png" alt=""><span>3º piso do Instituto Metrópole Digital</span></li>
+                    <li><img src="imagens/pinPhone.png" alt=""><span>(84) 9 8888-8888</span></li>
+                    <li><img src="imagens/pinEmail.png" alt=""><span>hubsfood@gmail.com</span></li>
+                    <li><img src="imagens/pinHorario.png" alt=""><span>24h</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-    </footer>
-    
+    <div class="end">
+        <span>Copyright  @ 2024  All rights reserved</span>
+    </div>
+
 </body>
-</html>

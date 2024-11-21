@@ -1,0 +1,98 @@
+.main {
+    background-image: url("imagens/fachadaHubsfood.png");
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+}
+
+.empty {
+    height: 230px;
+}
+
+.body-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    height: 100h;
+    gap: 5px;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+.body-search img {
+    height: 20px;
+}
+
+.body-search span {
+    color: #9D9191;
+    text-decoration: none;
+    font-size: 15px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.body-about {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: space-between;
+    gap: 100px;
+    width: 700px;
+    margin: 10px auto;
+}
+
+.body-about img {
+    width:300px;
+}
+
+.body-about h4 {
+    color: #FF7A55;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.body-about h2 {
+    color: #FF3700;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 1000;
+    margin: 5px;
+}
+
+.body-about p {
+    color: #9D9191;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px;
+    text-align: justify;
+}
+
+.body-carousel {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    max-width: 600px; /* Largura máxima */
+    margin: 0 auto; /* Centralizar o carrossel */
+    overflow: hidden; /* Ocultar qualquer conteúdo que ultrapasse os limites */
+}
+
+.body-carousel h3 {
+    padding-bottom: 20px;
+    padding-left: 70px;
+    color: #FF3700;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.body-carousel span {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #9D9191;
+    font-size: 15px;
+    font-weight: 1000;
+}
