@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Garamond', 'Georgia', serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -211,7 +211,6 @@ footer {
     display:block;
 }
 
-
 .Sobre_nos h2, .Sobre_nos h1, .Sobre_nos p {
     color: black;
     width: 400px;        /* Garante que o conteúdo ocupe a mesma largura */
@@ -228,10 +227,10 @@ footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.Sobre_nos h1 {
+ h1 {
     font-weight: bold;           
     font-size: 2em;
-
+    padding: 5px;
 }
 
 .Sobre_nos p {
@@ -251,6 +250,20 @@ footer {
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
     margin-top: 5px;
+}
+
+.bannerHubsfood{
+    text-align: center;
+    margin-top: 30px;
+}
+.bannerHubsfood img{
+    width: 70%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.conteudoBanner{
+    width: 50%;
+    margin: 0 auto;
 }
 
 
@@ -326,11 +339,29 @@ footer {
         width: 80%; /* Aumenta a largura para ocupar mais espaço disponível */
         margin-left: 0;
         margin-right: 0;
+     
     }
 
     .Sobre_nos {
         padding: 0px 30px 0px 30px; /* Adiciona mais padding para não colar nas bordas */
         margin-top: 5%;
+        
+    }
+    .bannerHubsfood{
+        width: 600px;
+        margin: 0 auto;
+        margin-top: 50px;
+
+       
+    }
+    .conteudoBanner h1{
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .conteudoBanner{
+        width: 50%;
+        text-align: justify;
+    
     }
 }
 
