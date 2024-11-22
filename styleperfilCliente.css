@@ -1,0 +1,82 @@
+/* Basic resets */
+
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Main container for personal information */
+.informacoesPessoais {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+    background-color: #F4F5F7;
+}
+
+#nomeUsuario{
+    color: #858282;
+    font-size: 1em;
+}
+.informacoesPessoais p {
+    font-size: 1em; /* Ajuste para o tamanho desejado */
+    margin: 0; /* Remove margens se necessário */
+}
+
+/* Profile photo section */
+.fotoPerfil {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotoPerfil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    object-fit: cover;
+}
+
+/* Center data section */
+.dadosMeio {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+#emailUsuario, 
+#enderecoUsuario {
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+}
+
+/* Left data section */
+.dadosEsquerda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+#telefoneUsuario, 
+#dataEntrada {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+

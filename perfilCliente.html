@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style-header-footer.css">
     <link rel="stylesheet" href="style-body.css">
     <link rel="stylesheet" href="style-carousel.css">
+    <link rel="stylesheet" href="styleperfilCliente.css">
 
     <script src="script-carousel.js" defer></script>
     <script src="scriptMenuLogado.js" defer></script>
@@ -53,59 +54,23 @@
         </div>
     </div>
 
-    <div class="main">
-
-        <div class="empty"></div>
-
-        <div class="body-search">
-            <div><img src="imagens/pinLocation.png" alt=""><span>Pesquise o seu hub aqui!</span></div>
-            <div><input type="search"></div>
-            <div><button>Buscar</button></div>
-        </div>
-
-        <div class="body-about">
-            <div><img src="imagens/sobreNosDescricao.png" alt="3 imagens de restaurantes"></div>
-            <div>
-                <h4>Sobre nós...</h4>
-                <h2>O Seu Centralizador de Cardápios</h2>
-                <p>O HubsFood centraliza os cardápios de praças de alimentação, permitindo que os clientes acessem menus e façam pedidos com facilidade, enquanto os restaurantes gerenciam tudo de forma simples e eficiente.</p>
+    <main>
+        <div class="informacoesPessoais">
+            <div class="fotoPerfil">
+                <img src="imagens/time.png" alt="">
+            </div>
+            <div class="dadosMeio ">
+                 <!-- o primeiro <h2> e os <p> tem que estar um abaixo do outro e os <i> de dentro dos <p> não é abaixo, é do lado<-->
+                <h2 id="nomeUsuario">Ana Paula Oliveira de Lima</h2>
+                <p id="emailUsuario"><img src="imagens/pinEmail.png" alt="">anapaulalima@gmail.com</p>
+                <p id="enderecoUsuario"><img src="imagens/pinLocation.png"width="25px" alt="">Natal,RN</p>
+            </div>
+            <div class="dadosEsquerda">
+                <p id="telefoneUsuario"><img src="imagens/pinPhone.png" alt="">84 99619-0041</p>
+                <p id="dataEntrada">Desde 2024</p>
             </div>
         </div>
-
-
-        <div class="body-carousel">
-            <h3>Hubs Cadastrados</h3>
-            <div class="owl-carousel" id="carousel1">
-                <div>
-                    <a href="paginaHub.html"><img src="imagens/icon_midway.png" alt="Midway Mall Icon"></a>
-                    <span>Midway Mall</span>
-                </div>
-
-                <div>
-                    <a href="paginaHub.html"><img src="imagens/icon_natalShopping.png" alt="Natal Shopping Icon"></a>
-                    <span>Natal Shopping</span>
-                </div>
-
-                <div>
-                    <a href="paginaHub.html"><img src="imagens/icon_partage.png" alt="Partage Shopping Icon"></a>
-                    <span>Partage Norte Shopping</span>
-                </div>
-                <div>
-                    <a href="paginaHub.html"><img src="imagens/icon_praiaShopping.png" alt="Praia Shopping Icon"></a>
-                    <span>Praia Shopping</span>
-                </div>
-            </div>
-            <div class="custom-nav">
-                <button class="custom-prev" id="carousel1-prev">← </button>
-                <button class="custom-next" id="carousel1-next"> →</button>
-            </div>
-
-
-        </div>
-
-        
-    </div>
-
+    </main>
     <div class="footer container">
         <div class="logo">
             <img src="imagens/logoInferior.png" alt="">
