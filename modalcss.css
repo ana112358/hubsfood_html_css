@@ -21,18 +21,20 @@
     background-color: white;
     padding: 20px;
     border-radius: 20px; 
-    width: 80%;
+    width: 700px;
     max-width: 500px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
     position: relative; 
+    box-shadow: 0px 0px 5px 5px #ffbdab;
     
     
 }
 
 .modal-content h3 a{
-    color: #FF7A55;
-    font-size: 12px;
+    color: #9D9191;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 /* Botão de fechar o modal */
@@ -48,26 +50,40 @@
 /* Estilos adicionais para inputs e botões */
 .modal-content input[type="text"], 
 .modal-content input[type="password"] {
-    width: 90%; 
+    width: 65%; 
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #FF3700;
-    border-radius: 5px;
+    border: 1px solid #bbbbbb;
+    
     box-sizing: border-box;
     background-color: #f7f7f7;
-    color: #FF3700;
+    color: grey;
     font-weight: 600;
 }
 
 .modal-content button {
-    width: 40%; 
+    width: 35%; 
     padding: 10px;
     margin: 10px 0; 
-    background-color: #FF7A55;
+    background-color: #FF9B80;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+#entrar{
+    width: 20%;
+    background-color:#FF7A55 ;
+}
+
+ hr{
+    border: none;               /* Remove qualquer borda padrão */
+    height: 2px;                /* Define uma altura maior para o hr */
+    background-color: #9D9191;  /* Define a cor cinza */
+    width: 100%;                /* Ajusta para ocupar toda a largura disponível */
+    margin: 20px 0;  height: 1px;                /* Define a altura do hr */
+    background-color: #9D9191;
 }
 
 button:hover {
@@ -79,3 +95,18 @@ button:hover {
     margin-bottom: 15px; 
 }
 
+
+/* Container do "Lembrar-me" */
+.lembrar-me {
+    display: flex;
+    justify-content: flex-start; /* Alinha à esquerda */
+    align-items: center; /* Centraliza verticalmente */
+    width: 90%; /* Mantém a largura dos inputs */
+    margin-bottom: 15px;
+    margin-left: 120px;
+}
+
+/* Ajuste de espaçamento entre o checkbox e o label */
+.lembrar-me input[type="checkbox"] {
+    margin-right: 10px; /* Espaçamento à direita do checkbox */
+}
