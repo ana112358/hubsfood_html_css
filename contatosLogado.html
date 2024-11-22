@@ -6,6 +6,7 @@
     
     <link rel="stylesheet" href="style-header-footer.css">
     <link rel="stylesheet" href="style-body.css">
+    <script src="scriptMenuLogado.js" defer></script>
     
     <title>HubsFood - Contatos</title>
 
@@ -37,9 +38,19 @@
             </div>
         </div>
 
+        <!--Alterar os links do menu-->
         <div class="user">
-            <button>Logar</button>
-            <img src="imagens/User.png" alt="Foto de Perfil">
+            <div class="loginIcons"><a href="contatos.html"><img src="imagens/iconAlarm.png" alt="Notificações"></a></div>
+            <div class="loginIcons"><a href="sobre.html"><img src="imagens/iconCarrinho.png" alt="Carrinho"></a></div>
+            <div class="menu-container">
+                <img src="imagens/photoUser.png" alt="Foto de Perfil" class="menu-trigger">
+                <div class="menu" id="menu">
+                    <a href="#item1">Perfil</a>
+                    <a href="#item2">Meus pedidos</a>
+                    <a href="#item3">Sair</a>
+                </div>
+            </div>
+            <span>João Domingus</span>
         </div>
 
     </div>
@@ -122,3 +133,4 @@
     </div>
 
 </body>
+
