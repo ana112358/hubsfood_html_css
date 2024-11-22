@@ -71,8 +71,30 @@ body {
     align-content: center;
     justify-content: flex-end;
     height: 100h;
-    gap:10px;
+    gap: 0px;
 }
+
+.user span {
+    color: #FF7A55;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.loginIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.loginIcons img {
+    height: 20px;
+}
+
+
 
 
 input[type="search"] {
@@ -84,7 +106,7 @@ input[type="search"] {
     background-color: #f0f0f0;
     transition: all 0.3s ease;
     color: #FF3700;
-    font-weight: 1000;
+    font-weight: 600;
 }
 
 input[type="search"]:focus {

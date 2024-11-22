@@ -1,36 +1,38 @@
 /* Estilos para o modal */
 .modal {
-    display: flex; /* Utiliza Flexbox */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    position: fixed; /* Fixa a posição em relação à tela */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
-    z-index: 1000; /* Sobrepõe outros elementos 
-    */
-    color: grey;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1000; 
+    color: #9D9191;
 }
 
 /* Conteúdo do modal */
 .modal-content {
-    display: flex; /* Utiliza Flexbox */
-    flex-direction: column; /* Coloca os elementos um abaixo do outro */
-    align-items: center; /* Centraliza os elementos horizontalmente */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
     background-color: white;
     padding: 20px;
-    border-radius: 10px; /* Bordas arredondadas */
+    border-radius: 20px; 
     width: 80%;
     max-width: 500px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
-    position: relative; /* Para posicionar o botão de fechar */
+    position: relative; 
+    
+    
 }
 
 .modal-content h3 a{
-    color: gray;
+    color: #FF7A55;
+    font-size: 12px;
 }
 
 /* Botão de fechar o modal */
@@ -40,23 +42,27 @@
     right: 20px;
     font-size: 24px;
     cursor: pointer;
+    color: #FF3700;
 }
 
 /* Estilos adicionais para inputs e botões */
 .modal-content input[type="text"], 
 .modal-content input[type="password"] {
-    width: 90%; /* Ocupa toda a largura disponível */
+    width: 90%; 
     padding: 10px;
-    margin: 10px 0; /* Espaçamento entre os campos */
-    border: 1px solid #ccc;
+    margin: 10px 0;
+    border: 1px solid #FF3700;
     border-radius: 5px;
     box-sizing: border-box;
+    background-color: #f7f7f7;
+    color: #FF3700;
+    font-weight: 600;
 }
 
 .modal-content button {
-    width: 40%; /* Botão ocupa toda a largura */
+    width: 40%; 
     padding: 10px;
-    margin: 10px 0; /* Espaçamento entre os botões */
+    margin: 10px 0; 
     background-color: #FF7A55;
     color: white;
     border: none;
@@ -64,7 +70,12 @@
     cursor: pointer;
 }
 
+button:hover {
+    background-color:white ;
+    color:#d43f2a ;
+}
+
 .modal-content h2, .modal-content h3 {
-    margin-bottom: 15px; /* Espaçamento inferior */
+    margin-bottom: 15px; 
 }
 
