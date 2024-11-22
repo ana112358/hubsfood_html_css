@@ -94,6 +94,49 @@ body {
     height: 20px;
 }
 
+.menu-container {
+    position: relative; 
+    display: inline-block;
+    text-align: center;
+}
+
+.menu-container img{
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.menu-trigger {
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FFDED5;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    border-radius: 5px;
+    z-index: 100;
+    width: 150px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #FF7A55;
+    font-size: 14px;
+    text-align: left;
+}
+
+.menu a:hover {
+    background-color: #FF7A55;
+    color: #FFDED5;
+}
 
 
 
@@ -128,7 +171,7 @@ button {
 }
 
 button:hover {
-    background-color:white ; /* Cor do botão ao passar o mouse */
+    background-color:white ;
     color:#d43f2a ;
 }
 
