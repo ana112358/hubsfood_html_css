@@ -62,7 +62,7 @@
 }
 
 .modal-content button {
-    width: 35%; 
+    width: 40%; 
     padding: 10px;
     margin: 10px 0; 
     background-color: #FF9B80;
@@ -70,11 +70,18 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    border: 1px solid#e2e2e2;
 }
 
 #entrar{
     width: 20%;
     background-color:#FF7A55 ;
+   
+   
+}
+#entrar a{
+    color: #fff;
+    text-decoration: none;
 }
 
  hr{
@@ -86,9 +93,12 @@
     background-color: #9D9191;
 }
 
-button:hover {
+button:hover, #entrar:hover {
     background-color:white ;
     color:#d43f2a ;
+}
+#entrar a:hover{
+    color: #d43f2a;
 }
 
 .modal-content h2, .modal-content h3 {
@@ -103,10 +113,13 @@ button:hover {
     align-items: center; /* Centraliza verticalmente */
     width: 90%; /* Mantém a largura dos inputs */
     margin-bottom: 15px;
-    margin-left: 120px;
+    margin-left: 115px;
 }
 
 /* Ajuste de espaçamento entre o checkbox e o label */
 .lembrar-me input[type="checkbox"] {
     margin-right: 10px; /* Espaçamento à direita do checkbox */
+}
+#senhaEsquecida{
+    margin-bottom: 0;
 }
