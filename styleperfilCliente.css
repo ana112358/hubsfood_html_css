@@ -20,6 +20,7 @@ h2{
     background-color: #F4F5F7;
     margin: 0 auto;
     margin-bottom: 25px;
+    flex-wrap: wrap; /* Permite que os itens se reorganizem em telas menores */
 }
 
 .informacoesPessoais p {
