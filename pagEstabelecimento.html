@@ -15,6 +15,11 @@
 
     <script src="script-carousel.js" defer></script>
     <script src="scriptMenuLogado.js" defer></script>
+    <style>
+        .main{
+            background-image: none;
+        }
+    </style>
     
     <title>HubsFood</title>
 </head>
@@ -39,8 +44,8 @@
 
         <!--Alterar os links do menu-->
         <div class="user">
-            <div class="loginIcons"><a href="#item2"><img src="imagens/iconAlarm.png" alt="Notificações"></a></div>
-            <div class="loginIcons"><a href="#item2"><img src="imagens/iconCarrinho.png" alt="Carrinho"></a></div>
+            <div class="loginIcons"><a href="contatos.html"><img src="imagens/iconAlarm.png" alt="Notificações"></a></div>
+            <div class="loginIcons"><a href="sobre.html"><img src="imagens/iconCarrinho.png" alt="Carrinho"></a></div>
             <div class="menu-container">
                 <img src="imagens/photoUser.png" alt="Foto de Perfil" class="menu-trigger">
                 <div class="menu" id="menu">
@@ -55,53 +60,29 @@
 
     <div class="main">
 
+        <div class="head_estabelecimento">
+            <div>
+                <img src="imagens/iconBobs.png" alt="Perfil Bob's">
+            </div>
+            <div>
+                <ul>
+                    <li>Hub:<span>Midway Mall</span></li>
+                    <li>Telefone:<span>(84) 9 8888-8888</span></li>
+                    <li>Horário de funcionamento:<span>10h às 22h</span></li>
+                    <li>Aberto</li>
+                </ul>
+            </div>
+            
+           
+                
+           
+        </div>
+
+
+
         <div class="empty"></div>
 
-        <div class="body-search">
-            <div><img src="imagens/pinLocation.png" alt=""><span>Pesquise o seu hub aqui!</span></div>
-            <div><input type="search"></div>
-            <div><button>Buscar</button></div>
-        </div>
-
-        <div class="body-about">
-            <div><img src="imagens/sobreNosDescricao.png" alt="3 imagens de restaurantes"></div>
-            <div>
-                <h4>Sobre nós...</h4>
-                <h2>O Seu Centralizador de Cardápios</h2>
-                <p>O HubsFood centraliza os cardápios de praças de alimentação, permitindo que os clientes acessem menus e façam pedidos com facilidade, enquanto os restaurantes gerenciam tudo de forma simples e eficiente.</p>
-            </div>
-        </div>
-
-
-        <div class="body-carousel">
-            <h3>Hubs Cadastrados</h3>
-            <div class="owl-carousel" id="carousel1">
-                <div>
-                    <a href="paginaHub.html"><img src="imagens/icon_midway.png" alt="Midway Mall Icon"></a>
-                    <span>Midway Mall</span>
-                </div>
-
-                <div>
-                    <a href="paginaHub.html"><img src="imagens/icon_natalShopping.png" alt="Natal Shopping Icon"></a>
-                    <span>Natal Shopping</span>
-                </div>
-
-                <div>
-                    <a href="paginaHub.html"><img src="imagens/icon_partage.png" alt="Partage Shopping Icon"></a>
-                    <span>Partage Norte Shopping</span>
-                </div>
-                <div>
-                    <a href="paginaHub.html"><img src="imagens/icon_praiaShopping.png" alt="Praia Shopping Icon"></a>
-                    <span>Praia Shopping</span>
-                </div>
-            </div>
-            <div class="custom-nav">
-                <button class="custom-prev" id="carousel1-prev">← </button>
-                <button class="custom-next" id="carousel1-next"> →</button>
-            </div>
-
-
-        </div>
+        
 
         
     </div>

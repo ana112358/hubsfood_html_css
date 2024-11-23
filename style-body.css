@@ -188,6 +188,28 @@
     font-size: 20px;
 }
 
+.head_estabelecimento{
+    background-color: #F17575;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: space-between;
+    gap: 100px;
+    max-width: 1200px;
+    margin: 10px auto;
+}
+
+.head_estabelecimento img{
+    width:180px;
+    padding: 30px;
+}
+
+
+
+
+
+
 
 .body-carousel {
     padding-top: 50px;
