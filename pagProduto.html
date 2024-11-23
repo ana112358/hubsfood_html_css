@@ -12,13 +12,18 @@
     <link rel="stylesheet" href="style-header-footer.css">
     <link rel="stylesheet" href="style-body.css">
     <link rel="stylesheet" href="style-carousel.css">
-    <link rel="stylesheet" href="style-pedidosCliente.css">
+    <link rel="stylesheet" href="style-addItem.css">
 
     <script src="script-carousel.js" defer></script>
     <script src="scriptMenuLogado.js" defer></script>
+    <script src="script-addItem.js" defer></script>
+    <style>
+        .main{
+            background-image: none;
+        }
+    </style>
     
-
-    <title>Pedidos</title>
+    <title>HubsFood</title>
 </head>
 
 <body>
@@ -55,45 +60,50 @@
         </div>
     </div>
 
-    <main>
+    <div class="main">
 
+        <div class="head_estabelecimento">
+            <div class="head_estabLeft">
+                <div>
+                    <img src="imagens/iconBobs.png" alt="Perfil Bob's">
+                </div>
+                <div>
+                    <ul>
+                        <li>Hub:<span>Midway Mall</span></li>
+                        <li>Telefone:<span>(84) 9 8888-8888</span></li>
+                        <li>Horário de funcionamento:<span>10h às 22h</span></li>
+                        <li>Aberto</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="faleLoja"><button>Chat</button></div>
+        </div>
         
+        <div class="itemDescriptionContainer">
+            <div class="itemDescription">
+                <img src="imagens/comboFood.png" alt="Combo 1">
+                <div>
+                    <ul>
+                        <li class="itemTopico">Combo Especial 1</li>
+                        <li><span>1 sanduíche de frango</span> </li>
+                        <li><span>1 Refil de coca</span></li>
+                        <li><span>1 Batata Média</span></li>
+                        <li><span>R$28,00</span></li>
+                    </ul>
+                </div>
+            </div>
+                <div class="counter-container">
+                    <button id="decrementBtn" class="button decrement">-</button>
+                    <span id="itemCount" class="counter">0</span>
+                    <button id="incrementBtn" class="button increment">+</button>
+                </div>
+                <div><button id="addToCartBtn" class="button add-to-cart">Adicionar ao Carrinho</button></div>
+            
+            
+        </div>
+    </div>
 
-        <table id="filaPedidos">
-            <caption>Meus Pedidos</caption>
-            <thead>
-                <tr>
-                    <th>Hub</th>
-                    <th>Loja</th>
-                    <th>Itens</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Hub 1</td>
-                    <td>Loja A</td>
-                    <td>Produto 1, Produto 2</td>
-                    <td>Em andamento</td>
-                </tr>
-                <tr>
-                    <td>Hub 2</td>
-                    <td>Loja B</td>
-                    <td>Produto 3</td>
-                    <td>Entregue</td>
-                </tr>
-                <tr>
-                    <td>Hub 3</td>
-                    <td>Loja C</td>
-                    <td>Produto 4, Produto 5</td>
-                    <td>Cancelado</td>
-                </tr>
-            </tbody>
-        </table>
-
-        
-
-    </main>
     <div class="footer container">
         <div class="logo">
             <img src="imagens/logoInferior.png" alt="">

@@ -1,0 +1,54 @@
+.counter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 0, auto;
+}
+
+.button {
+    background-color: #FF3700;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color:white ;
+    color:#d43f2a ;
+}
+
+.counter {
+    color:#9D9191;
+    font-size: 15px;
+    font-weight: bold;
+    width: 50px;
+    text-align: center;
+}
+
+.add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    background-color: #FFBC0D;
+    color: white;
+    border-radius: 15px;
+    width: auto;
+    padding: 18px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color:white ;
+    color:#d43f2a ;
+}
