@@ -15,9 +15,16 @@
 
 
     <script src="scriptMenuLogado.js" defer></script>
+    <script src="script-pagamento.js" defer></script>
+
     <style>
         .main{
             background-image: none;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .head_estabelecimento{
+            background-color: #FF7A55;
         }
     </style>
     
@@ -60,46 +67,37 @@
 
     <div class="main">
 
-        <div class="head_estabelecimento">
-            <div class="head_estabLeft">
-                <div>
-                    <img src="imagens/iconBobs.png" alt="Perfil Bob's">
+        <div class="paymentContainer">
+            <div class="payment-box">
+                <h1>Valor a pagar</h1>
+
+                <!-- Total e valor -->
+                <div class="total-section">
+                    <span>Total:</span>
+                    <span class="total-value">R$ 150,00</span>
                 </div>
-                <div>
-                    <ul>
-                        <li>Hub:<span>Midway Mall</span></li>
-                        <li>Telefone:<span>(84) 9 8888-8888</span></li>
-                        <li>Horário de funcionamento:<span>10h às 22h</span></li>
-                        <li>Aberto</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="faleLoja"><button>Chat</button></div>
-        </div>
         
-        <div class="itemDescriptionContainer">
-            <div class="itemDescription">
-                <img src="imagens/comboFood.png" alt="Combo 1">
-                <div>
-                    <ul>
-                        <li class="itemTopico">Combo Especial 1</li>
-                        <li><span>1 sanduíche de frango</span> </li>
-                        <li><span>1 Refil de coca</span></li>
-                        <li><span>1 Batata Média</span></li>
-                        <li><span>R$28,00</span></li>
-                    </ul>
+                <!-- Seleção de forma de pagamento -->
+                <div class="payment-method">
+                    <p>Selecione a forma de pagamento:</p>
+                    <label>
+                        <input type="radio" name="payment" value="pix" id="pix"> Pix
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="cartao" id="cartao"> Cartão de crédito
+                    </label>
                 </div>
+        
+                <!-- Botão confirmar -->
+                <button id="pagar">Confirmar</button>
             </div>
-                <div class="counter-container">
-                    <button id="decrementBtn" class="button decrement">-</button>
-                    <span id="itemCount" class="counter">0</span>
-                    <button id="incrementBtn" class="button increment">+</button>
-                </div>
-                <div><button id="addToCartBtn" class="button add-to-cart">Adicionar ao Carrinho</button></div>
-            
-            
         </div>
+
+        
+
+    
+
+        
     </div>
 
     <div class="footer container">
