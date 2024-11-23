@@ -1,20 +1,20 @@
 /* Estilos para os controles personalizados */
 
 .owl-carousel {
-  max-width: 450px; /* Largura máxima */
-  max-height: 150px; /* Altura máxima */
-  margin: 0 auto; /* Centralizar o carrossel */
+  max-width: 450px; /* Largura máxima 450*/
+  max-height: 150px; /* Altura máxima 150*/
+  margin: 0 auto; /* Centralizar o carrossel 0 auto*/
   overflow: hidden; /* Ocultar qualquer conteúdo que ultrapasse os limites */
 }
 
 .owl-carousel .owl-item img {
-  max-width: 100px;  /* As imagens não ultrapassam a largura do carrossel */
-  max-height: 100px; /* As imagens não ultrapassam a altura do carrossel */
+  max-width: 100px;  /* As imagens não ultrapassam a largura do carrossel 100 */
+  max-height: 100px; /* As imagens não ultrapassam a altura do carrossel  100*/
 }
 
 .custom-nav {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 10px; /*10px*/
   }
 
 
@@ -34,25 +34,25 @@
     position: relative;
     background-color: #f05033;
     font-weight: 1000;
-    transform: translateY(-120px); /* Ajuste fino para centralizar */
+    transform: translateY(-120px); /* Ajuste fino para centralizar -120px */
     color: white; /* Cor do texto */
     border: none; /* Sem borda */
     padding: 10px 15px; /* Tamanho dos botões */
     font-size: 15px; /* Tamanho da fonte */
     cursor: pointer; /* Cursor em forma de mão */
-    border-radius: 50%; /* Botões redondos */
-    z-index: 10; /* Garantir que estejam acima do carrossel */
+    border-radius: 50%; /* Botões redondos 50%*/
+    z-index: 10; /* Garantir que estejam acima do carrossel 10*/
     transition: background-color 0.3s; /* Efeito de transição no hover */
   }
 
   /* Botão Anterior - Esquerda */
   .custom-prev {
-    left: -250px; /* Posição à esquerda */
+    left: -250px; /* Posição à esquerda -250px*/
   }
 
   /* Botão Próximo - Direita */
   .custom-next {
-    right: -250px; /* Posição à direita */
+    right: -250px; /* Posição à direita -250px*/
   }
 
 

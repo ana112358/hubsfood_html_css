@@ -192,19 +192,53 @@
     background-color: #F17575;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     align-content: center;
     justify-content: space-between;
-    gap: 100px;
-    max-width: 1200px;
-    margin: 10px auto;
+    height: 100h;
+}
+
+.head_estabLeft{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    gap: 30px;
+    width: 100%;
+    padding: 20px;
+
 }
 
 .head_estabelecimento img{
-    width:180px;
-    padding: 30px;
+    height: 120px;
 }
 
+.head_estabelecimento ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: center;
+    font-weight: 700;
+    color: white;
+    gap: 10px;
+    font-size: 14px;
+    
+}
+.head_estabelecimento span{
+    padding-left: 5px;
+    font-weight: 10;
+}
+
+.faleLoja{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+    padding-right: 40px;
+}
 
 
 
@@ -212,12 +246,13 @@
 
 
 .body-carousel {
-    padding-top: 50px;
-    padding-bottom: 30px;
-    max-width: 600px; 
+    padding-top: 50px; /*50px*/
+    padding-bottom: 30px; /*30px*/
+    max-width: 600px; /*600px*/
     margin: 0 auto; 
     overflow: hidden; 
 }
+
 
 .body-carousel h3 {
     padding-bottom: 20px;
@@ -233,4 +268,12 @@
     color: #9D9191;
     font-size: 13px;
     font-weight: 700;
+}
+
+.body-carousel .preco{
+    color: #FF3700;
+}
+
+.body-carousel .precoRiscado{
+    text-decoration:line-through;
 }

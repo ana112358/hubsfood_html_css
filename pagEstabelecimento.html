@@ -19,6 +19,10 @@
         .main{
             background-image: none;
         }
+        .empty{
+            height: 30px;
+        }
+        
     </style>
     
     <title>HubsFood</title>
@@ -44,8 +48,8 @@
 
         <!--Alterar os links do menu-->
         <div class="user">
-            <div class="loginIcons"><a href="contatos.html"><img src="imagens/iconAlarm.png" alt="Notificações"></a></div>
-            <div class="loginIcons"><a href="sobre.html"><img src="imagens/iconCarrinho.png" alt="Carrinho"></a></div>
+            <div class="loginIcons"><a href="#item2"><img src="imagens/iconAlarm.png" alt="Notificações"></a></div>
+            <div class="loginIcons"><a href="#item2"><img src="imagens/iconCarrinho.png" alt="Carrinho"></a></div>
             <div class="menu-container">
                 <img src="imagens/photoUser.png" alt="Foto de Perfil" class="menu-trigger">
                 <div class="menu" id="menu">
@@ -61,17 +65,21 @@
     <div class="main">
 
         <div class="head_estabelecimento">
-            <div>
-                <img src="imagens/iconBobs.png" alt="Perfil Bob's">
+            <div class="head_estabLeft">
+                <div>
+                    <img src="imagens/iconBobs.png" alt="Perfil Bob's">
+                </div>
+                <div>
+                    <ul>
+                        <li>Hub:<span>Midway Mall</span></li>
+                        <li>Telefone:<span>(84) 9 8888-8888</span></li>
+                        <li>Horário de funcionamento:<span>10h às 22h</span></li>
+                        <li>Aberto</li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <ul>
-                    <li>Hub:<span>Midway Mall</span></li>
-                    <li>Telefone:<span>(84) 9 8888-8888</span></li>
-                    <li>Horário de funcionamento:<span>10h às 22h</span></li>
-                    <li>Aberto</li>
-                </ul>
-            </div>
+            
+            <div class="faleLoja"><button>Chat</button></div>
             
            
                 
@@ -81,6 +89,103 @@
 
 
         <div class="empty"></div>
+
+
+        <div class="body-carousel">
+            <h3>Combo 1</h3>
+            <div class="owl-carousel" id="carousel1">
+                <div>
+                    <img src="imagens/comboFood.png" alt="Comida 1">
+                    <span>Especial 1</span>
+                    <span class="preco">R$25,00 <span class="precoRiscado"></span></span>
+                </div>
+
+                <div>
+                    <img src="imagens/comboFood.png" alt="Comida 2">
+                    <span>Especial 2</span>
+                    <span class="preco">R$28,00 <span class="precoRiscado">R$35,00</span></span>
+                </div>
+
+                <div>
+                    <img src="imagens/comboFood.png" alt="Comida 3">
+                    <span>Especial 3</span>
+                    <span class="preco">R$30,00 <span class="precoRiscado">R$35,00</span></span>
+                </div>
+                <div>
+                    <img src="imagens/comboFood.png" alt="Comida 4">
+                    <span>Especial 4</span>
+                    <span class="preco">R$40,00 <span class="precoRiscado"></span></span>
+                </div>
+            </div>
+            <div class="custom-nav">
+                <button class="custom-prev" id="carousel1-prev">← </button>
+                <button class="custom-next" id="carousel1-next"> →</button>
+            </div>
+        </div>
+
+        <div class="body-carousel">
+            <h3>Combo 2</h3>
+            <div class="owl-carousel" id="carousel2">
+                <div>
+                    <img src="imagens/comboFood.png" alt="Comida 1">
+                    <span>Especial 1</span>
+                    <span class="preco">R$25,00 <span class="precoRiscado"></span></span>
+                </div>
+
+                <div>
+                    <img src="imagens/comboFood.png" alt="Comida 2">
+                    <span>Especial 2</span>
+                    <span class="preco">R$28,00 <span class="precoRiscado">R$35,00</span></span>
+                </div>
+
+                <div>
+                    <img src="imagens/comboFood.png" alt="Comida 3">
+                    <span>Especial 3</span>
+                    <span class="preco">R$30,00 <span class="precoRiscado">R$35,00</span></span>
+                </div>
+                <div>
+                    <img src="imagens/comboFood.png" alt="Comida 4">
+                    <span>Especial 4</span>
+                    <span class="preco">R$40,00 <span class="precoRiscado"></span></span>
+                </div>
+            </div>
+            <div class="custom-nav">
+                <button class="custom-prev" id="carousel2-prev">← </button>
+                <button class="custom-next" id="carousel2-next"> →</button>
+            </div>
+        </div>
+
+        <div class="body-carousel">
+            <h3>Combo 3</h3>
+            <div class="owl-carousel" id="carousel3">
+                <div>
+                    <img src="imagens/comboFood.png" alt="Comida 1">
+                    <span>Especial 1</span>
+                    <span class="preco">R$25,00 <span class="precoRiscado"></span></span>
+                </div>
+
+                <div>
+                    <img src="imagens/comboFood.png" alt="Comida 2">
+                    <span>Especial 2</span>
+                    <span class="preco">R$28,00 <span class="precoRiscado">R$35,00</span></span>
+                </div>
+
+                <div>
+                    <img src="imagens/comboFood.png" alt="Comida 3">
+                    <span>Especial 3</span>
+                    <span class="preco">R$30,00 <span class="precoRiscado">R$35,00</span></span>
+                </div>
+                <div>
+                    <img src="imagens/comboFood.png" alt="Comida 4">
+                    <span>Combo Especial 4</span>
+                    <span class="preco">R$40,00 <span class="precoRiscado"></span></span>
+                </div>
+            </div>
+            <div class="custom-nav">
+                <button class="custom-prev" id="carousel3-prev">← </button>
+                <button class="custom-next" id="carousel3-next"> →</button>
+            </div>
+        </div>
 
         
 
