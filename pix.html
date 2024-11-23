@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="style-header-footer.css">
     <link rel="stylesheet" href="style-body.css">
-    
+    <link rel="stylesheet" href="style-pagamento.css">
+
+
     <script src="scriptMenuLogado.js" defer></script>
-    
-    <title>Contatos</title>
 
     <style>
-        .main {
-            background-image: url("imagens/fachadaContatos.png");
+        .main{
+            background-image: none;
+            padding-top: 30px;
+            padding-bottom: 30px;
         }
-        .empty {
-            height: 360px;
+        .head_estabelecimento{
+            background-color: #FF7A55;
         }
     </style>
+    
+    <title>Pagamento</title>
 </head>
 
 <body>
@@ -53,55 +57,41 @@
             </div>
             <span>João Domingus</span>
         </div>
-
     </div>
 
     <div class="main">
 
-        <div class="empty"></div>
+        <div class="paymentContainer">
+            <div class="payment-box">
+                <h1>Valor a pagar</h1>
 
-
-        <div class="external-contatos">
-            <div class="internal-contatos">
-                <h2>Estabelecimento 1</h2>
-                <div>
-                    <ul>
-                        <li><img src="imagens/pinEmail.png" alt=""><span>hubsfood@gmail.com</span></li>
-                        <li><img src="imagens/pinPhone.png" alt=""><span>(84) 9 8888-8888</span></li>
-                    </ul>
+                <!-- Total e valor -->
+                <div class="total-section">
+                    <span>Total:</span>
+                    <span class="total-value">R$ 150,00</span>
                 </div>
-            </div>
-
-            <div class="internal-contatos">
-                <h2>Estabelecimento 2</h2>
-                <div>
-                    <ul>
-                        <li><img src="imagens/pinEmail.png" alt=""><span>hubsfood@gmail.com</span></li>
-                        <li><img src="imagens/pinPhone.png" alt=""><span>(84) 9 8888-8888</span></li>
-                    </ul>
+        
+                <!-- Seleção de forma de pagamento -->
+                <div class="payment-method">
+                    <p>Selecione a forma de pagamento:</p>
+                    <label>
+                        <input type="radio" name="payment" value="pix" id="pix"> Pix
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="cartao" id="cartao"> Cartão de crédito
+                    </label>
                 </div>
-            </div>
-
-            <div class="internal-contatos">
-                <h2>Estabelecimento 3</h2>
-                <div>
-                    <ul>
-                        <li><img src="imagens/pinEmail.png" alt=""><span>hubsfood@gmail.com</span></li>
-                        <li><img src="imagens/pinPhone.png" alt=""><span>(84) 9 8888-8888</span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="internal-contatos">
-                <h2>Estabelecimento 4</h2>
-                <div>
-                    <ul>
-                        <li><img src="imagens/pinEmail.png" alt=""><span>hubsfood@gmail.com</span></li>
-                        <li><img src="imagens/pinPhone.png" alt=""><span>(84) 9 8888-8888</span></li>
-                    </ul>
-                </div>
+        
+                <!-- Botão confirmar -->
+                <button id="pagar">Confirmar</button>
             </div>
         </div>
+
+        
+
+    
+
+        
     </div>
 
     <div class="footer container">
@@ -134,4 +124,3 @@
     </div>
 
 </body>
-
