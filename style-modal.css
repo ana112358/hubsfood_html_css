@@ -199,13 +199,16 @@ button:hover, #entrar:hover {
     justify-content: center;
 }
 
-.form-group-3 input[type="text"], .form-group-3 input[type="number"]{
+.form-group-3 input[type="text"], .form-group-3 input[type="number"], .form-group-3 select{
+    height: 35px;
     width: 135px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
+.form-group-3 select{
+    margin-top: 10px;
+}
 .labelEsquerda  , .labelEsquerda  {
     font-weight: bold;
     text-align: left;
