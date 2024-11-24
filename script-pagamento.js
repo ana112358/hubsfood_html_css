@@ -7,10 +7,10 @@ confirmBtn.addEventListener('click', () => {
 
     if (pixOption.checked) {
         // Redirecionar para a página do Pix
-        window.location.href = 'pagamento_pix.html';
+        window.location.href = 'pix.html';
     } else if (cartaoOption.checked) {
         // Redirecionar para a página do Cartão
-        window.location.href = 'pagamento_cartao.html';
+        window.location.href = 'cartao.html';
     } else {
         alert('Por favor, selecione uma forma de pagamento.');
     }

@@ -64,3 +64,29 @@
     padding: 10px 0px;
     font-size: 18px;
 }
+
+/* Pagamento PIX */
+
+.pagamentoPixContainer{
+    width: 0, auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.pagamentoPixContainer img{
+    height: 120px;
+}
+
+.pagamentoPixContainer h3, .pagamentoPixContainer span{
+    color: #FF3700;
+    font-size: 15px;
+}
+
+.pagamentoPixContainer h2{
+    font-size: 22px;
+    color: #9D9191;
+}
