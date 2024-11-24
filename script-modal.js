@@ -83,3 +83,13 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = 'indexLogado.html';
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    // Seleciona o botão "Finalizar Cadastro"
+    const finalizarCadastroRestaurante = document.getElementById('finalizarCadastroRestaurante');
+
+    // Adiciona um evento de clique ao botão
+    finalizarCadastroRestaurante.addEventListener('click', function() {
+        // Redireciona para a página perfilEstabelecimento.html
+        window.location.href = 'perfilEstabelecimento.html';
+    });
+});
