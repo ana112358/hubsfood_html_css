@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style-header-footer.css">
+    <link rel="stylesheet" href="style-body.css">
+    <link rel="stylesheet" href="styleperfilEstabelecimento.css">
+
+    <script src="script-dadosPerfilEstab.js" defer></script>
+    <script src="scriptMenuLogado.js" defer></script>
+
+    <style>
+        .main{
+            background-image: none;
+        }
+        
+    </style>
+
+
+    <title>Perfil Estabelecimento</title>
+</head>
+
+<body>
+    <div class="header container">
+
+        <div class="container">
+            <div>
+                <img src="imagens/logoMenuSuperior.png" alt="">
+            </div>
+        </div>
+
+        <!--Alterar os links do menu-->
+        <div class="user">
+            <div class="menu-container">
+                <img src="imagens/userEstabelecimento.png" alt="Foto de Perfil" class="menu-trigger">
+                <div class="menu" id="menu">
+                    <a href="perfilEstabelecimento.html">Perfil</a>
+                    <a href="#item2">Cardápio</a>
+                    <a href="#item3">Pedidos</a>
+                    <a href="index.html">Sair</a>
+                </div>
+            </div>
+            <span>Bob's</span>
+        </div>
+    </div>
+
+    <main>
+        <div class="containerEstabelecimento">
+            <div><img src="imagens/userEstabelecimento.png" alt="Foto de Perfil"></div>
+            <h2>Perfil do estabelecimento</h2>
+            <div class="form-container">
+                <form id="storeForm">
+                    <!-- Nome da Loja e Nome do Responsável -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="storeName">Nome da Loja</label>
+                            <input type="text" id="storeName" placeholder="Ex: Loja ABC">
+                        </div>
+                        <div class="form-group">
+                            <label for="responsibleName">Nome do Responsável</label>
+                            <input type="text" id="responsibleName" placeholder="Ex: João Silva">
+                        </div>
+                    </div>
+        
+                    <!-- Descrição -->
+                    <div class="form-group">
+                        <label for="description">Descrição</label>
+                        <textarea id="description" placeholder="Breve descrição do estabelecimento"></textarea>
+                    </div>
+        
+                    <!-- Hub Cadastrado e Tipo de Estabelecimento -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="hub">Hub Cadastrado</label>
+                            <select id="hub">
+                                <option value="">Selecione o hub</option>
+                                <option value="midway">Midway Mall</option>
+                                <option value="shopping">Shopping Center</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="storeType">Tipo de Estabelecimento</label>
+                            <select id="storeType">
+                                <option value="">Selecione o tipo</option>
+                                <option value="restaurante">Restaurante</option>
+                                <option value="lanchonete">Lanchonete</option>
+                            </select>
+                        </div>
+                    </div>
+        
+                    <!-- Telefone e Celular do Responsável -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="storePhone">Telefone do Estabelecimento</label>
+                            <input type="tel" id="storePhone" placeholder="(XX) XXXX-XXXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="responsiblePhone">Celular do Responsável</label>
+                            <input type="tel" id="responsiblePhone" placeholder="(XX) 9XXXX-XXXX">
+                        </div>
+                    </div>
+        
+                    <!-- Horário de Funcionamento -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="day">Dia</label>
+                            <select id="day">
+                                <option value="">Selecione</option>
+                                <option value="segunda">Segunda-feira</option>
+                                <option value="terca">Terça-feira</option>
+                                <option value="quarta">Quarta-feira</option>
+                                <option value="quinta">Quinta-feira</option>
+                                <option value="sexta">Sexta-feira</option>
+                                <option value="sabado">Sábado</option>
+                                <option value="domingo">Domingo</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="openTime">Hora da Abertura</label>
+                            <input type="time" id="openTime">
+                        </div>
+                        <div class="form-group">
+                            <label for="closeTime">Hora do Fechamento</label>
+                            <input type="time" id="closeTime">
+                        </div>
+                        <div class="form-group">
+                            <button type="button" id="addSchedule" class="add-btn">Adicionar</button>
+                        </div>
+                    </div>
+        
+                    <!-- Lista de Horários -->
+                    <div id="scheduleList" class="horario-list"></div>
+        
+                    <!-- Botão de Salvar -->
+                    <div>
+                        <button type="submit" id="saveBtn" class="save-btn">Salvar Configurações</button>
+                    </div>
+                </form>
+        
+                <!-- Mensagem -->
+                <div id="message" class="message"></div>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="footer container">
+        <div class="logo">
+            <img src="imagens/logoInferior.png" alt="Logo Inferior">
+        </div>
+
+        <div class="container">
+            <div>
+                <ul>
+                    <li class="footer-header">Links:</li>
+                    <li><img src="imagens/logoInstagram.png" alt="Instagram"><a href="https://www.instagram.com/"><span>Instagram</span></a></li>
+                    <li><img src="imagens/logoPinterest.png" alt="Pinterest"><a href="https://br.pinterest.com/"><span>Pinterest</span></a> </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="footer-header">Contatos:</li>
+                    <li><img src="imagens/pinLocation.png" alt="Pin"><span>3º piso do Instituto Metrópole Digital</span></li>
+                    <li><img src="imagens/pinPhone.png" alt="Phone"><span>(84) 9 8888-8888</span></li>
+                    <li><img src="imagens/pinEmail.png" alt="Email"><span>hubsfood@gmail.com</span></li>
+                    <li><img src="imagens/pinHorario.png" alt="Horário"><span>24h</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="end">
+        <span>Copyright  @ 2024  All rights reserved</span>
+    </div>
+
+</body>
