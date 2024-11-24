@@ -12,6 +12,7 @@ const btnCriarConta = document.getElementById('criarConta'); // Botão para abri
 const btnContinuar = document.getElementById('cadastrarContinuar'); // Botão de continuar no modal de cadastro
 const checkboxConsumidor = document.getElementById('cadastroConsumidor'); 
 const checkboxEmpresa = document.getElementById('cadastroEmpresa'); 
+const finalizarCadastroBtn = document.getElementById('finalizarCadastroConsumidor');
 
 
 // Função para abrir o modal ao clicar no botão "Logar"
@@ -71,4 +72,14 @@ btnContinuar.addEventListener('click', () => {
     } else {
         alert('Por favor, marque a opção de concordar antes de continuar.');
     }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    
+    // Adiciona um evento de clique ao botão
+    finalizarCadastroBtn.addEventListener('click', function () {
+        // Redireciona para a página indexLogado.html
+        window.location.href = 'indexLogado.html';
+    });
 });
