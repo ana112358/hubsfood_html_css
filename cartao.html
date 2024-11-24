@@ -10,6 +10,7 @@
 
 
     <script src="scriptMenuLogado.js" defer></script>
+    <script src="script-selectCard.js" defer></script>
 
     <style>
         .main{
@@ -17,10 +18,9 @@
             padding-top: 30px;
             padding-bottom: 30px;
         }
-        
     </style>
     
-    <title>Pagamento Pix</title>
+    <title>Pagamento Cartão</title>
 </head>
 
 <body>
@@ -58,22 +58,32 @@
     </div>
 
     <div class="main">
-        <div class="pagamentoPixContainer">
-            <div><h3>Pagamento</h3></div>
-            <div><h2>via Pix</h2></div>
-            <img src="imagens/qrcode.png" alt="qrcode">
-            <div><h3>Ou pela chave:</h3></div>
-            <div><span>estabelecimento@emailPIX.com</span></div>
-            <div><span>Aguarde um email de confirmação do pagamento aprovado.</span></div>
-
-
+        <div class="paymentContainer">
+            <div class="payment-box">
+                <div class="total-section">
+                    <span>Total:</span>
+                    <span class="total-value">R$ 150,00</span>
+                </div>
+        
+                <!-- Dropdown para escolher o cartão -->
+                <div class="dropdown-section">
+                    <label for="cardDropdown">Selecione um cartão:</label>
+                    <select id="cardDropdown">
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="visa">Visa - **** 1234</option>
+                        <option value="mastercard">MasterCard - **** 5678</option>
+                        <option value="amex">Amex - **** 9012</option>
+                    </select>
+                </div>
+                
+                <button id="pagar">Pagar</button>
+        
+                <!-- Mensagem de confirmação -->
+                <div id="confirmationMessage" class="hidden">
+                    <p>Pagamento processado com sucesso!</p>
+                </div>
+            </div>
         </div>
-
-        
-
-    
-
-        
     </div>
 
     <div class="footer container">
