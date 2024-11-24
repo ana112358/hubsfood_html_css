@@ -1,4 +1,4 @@
-const confirmBtn = document.getElementById('confirmBtn');
+const confirmBtn = document.getElementById('pagar');
 
 // Evento ao clicar no botão Confirmar
 confirmBtn.addEventListener('click', () => {
