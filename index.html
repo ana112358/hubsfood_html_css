@@ -91,51 +91,87 @@
        <!--fim do modal para fazer login-->
 
        <!-- Início do modal para cadastro -->
-<div id="modal-cadastro" class="modal" style="display: none;">
-    <div class="modal-content">
-        <span class="close-btn">&times;</span>
-        <h2>Cadastro de conta</h2>
+    <div id="modal-cadastro" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Cadastro de conta</h2>
 
-        <h3>Você é um (a)?</h3>
+            <h3>Você é um (a)?</h3>
 
-        <div class="radio-group">
-            <input type="radio" name="tipoCadastro" id="cadastroConsumidor">
-            <label for="cadastroConsumidor">Consumidor(a)</label>
+            <div class="radio-group">
+                <input type="radio" name="tipoCadastro" id="cadastroConsumidor">
+                <label for="cadastroConsumidor">Consumidor(a)</label>
+            </div>
+
+            <div class="radio-group">
+                <input type="radio" name="tipoCadastro" id="cadastroEmpresa">
+                <label for="cadastroEmpresa">Empresa</label>
+            </div>
+
+            <hr>
+            <button type="button" id="cadastrarContinuar">
+                Continuar</button>
         </div>
+    </div>
+    <!-- Fim do modal para cadastro -->
 
-        <div class="radio-group">
-            <input type="radio" name="tipoCadastro" id="cadastroEmpresa">
-            <label for="cadastroEmpresa">Empresa</label>
+    <!-- Modal para Cadastro de Consumidor -->
+    <div id="modal-cadastro-consumidor" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Cadastro de Consumidor</h2>
+
+            <!-- Nome e Sobrenome lado a lado -->
+            <div class="form-group-2">
+                <input type="text" placeholder="Nome" class="input-inline">
+                <input type="text" placeholder="Sobrenome" class="input-inline">
+            </div>
+
+            <!-- Data de Nascimento lado a lado -->
+            <label class="labelEsquerda" for="dataAniversario">Data de Nascimento</label>
+
+            <div class="form-group-2">
+    
+                <input type="number" id="dataAniversario" class="input-inline">
+                <input type="month" id="mesAnoAniversario" class="input-inline">
+            </div>              
+
+            <!-- Gênero e Telefones lado a lado -->
+            <label class="labelEsquerda" for="genero">Gênero</label>
+
+            <div class="form-group-3">
+                <input type="text" placeholder="Gênero" class="input-inline">
+                <input type="text" placeholder="Telefone" class="input-inline" >
+                <input type="text" placeholder="Celular" class="input-inline" >
+            </div>
+
+            <!-- Email -->
+            <div class="form-group-1">
+                <input type="email" id="emailCadastro"  placeholder="Email">
+            </div>
+
+            <!-- Senha -->
+            <div class="form-group-1">
+                <input type="password" id="senhaCadastro"  placeholder="Senha">
+            </div>
+
+            <!-- Finalizar Cadastro -->
+            <button type="button" id="finalizarCadastroConsumidor">Finalizar Cadastro</button>
         </div>
-
-        <hr>
-        <button type="button" id="cadastrarContinuar">
-            Continuar</button>
     </div>
-</div>
-<!-- Fim do modal para cadastro -->
 
-<!-- Modal para Cadastro de Consumidor -->
-<div id="modal-cadastro-consumidor" class="modal" style="display: none;">
-    <div class="modal-content">
-        <span class="close-btn">&times;</span>
-        <h2>Cadastro de Consumidor</h2>
-        <!-- Campos de cadastro específicos para consumidor -->
-       
-        <button type="button" id="finalizarCadastroConsumidor">Finalizar Cadastro</button>
-    </div>
-</div>
 
-<!-- Modal para Cadastro de Restaurante -->
-<div id="modal-cadastro-restaurante" class="modal" style="display: none;">
-    <div class="modal-content">
-        <span class="close-btn">&times;</span>
-        <h2>Cadastro de Restaurante</h2>
-        <!-- Campos de cadastro específicos para restaurante -->
-        
-        <button type="button" id="finalizarCadastroRestaurante">Finalizar Cadastro</button>
+
+    <!-- Modal para Cadastro de Restaurante -->
+    <div id="modal-cadastro-restaurante" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Cadastro de Restaurante</h2>
+            <!-- Campos de cadastro específicos para restaurante -->
+            
+            <button type="button" id="finalizarCadastroRestaurante">Finalizar Cadastro</button>
+        </div>
     </div>
-</div>
 
 
         <div class="body-carousel">

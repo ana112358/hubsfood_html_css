@@ -54,7 +54,7 @@
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #bbbbbb;
-    
+
     box-sizing: border-box;
     background-color: #f7f7f7;
     color: grey;
@@ -72,7 +72,6 @@
     cursor: pointer;
     border: 1px solid#e2e2e2;
 }
-
 
 #entrar{
     width: 20%;
@@ -160,3 +159,57 @@ button:hover, #entrar:hover {
     margin-left: 20px;
    
 }
+/* Adiciona o flexbox para as form-groups e ajusta os comportamentos de layout */
+.form-group-1,
+.form-group-2,
+.form-group-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Formulário com 1 input - ocupa 100% da largura */
+.form-group-1 input[type="password"], .form-group-1 input[type="email"] {
+    width: 420px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid ;
+    border-radius: 5px;
+}
+
+/* Formulário com 2 inputs - lado a lado */
+.form-group-2 {
+    flex-direction: row; /* Alinha os inputs lado a lado */
+    gap: 10px; /* Espaçamento entre os inputs */
+    width: 430px;
+}
+
+.form-group-2 input {
+    flex: 1; /* Cada input ocupa 50% da largura */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Formulário com 3 inputs - lado a lado */
+.form-group-3 {
+    width: 480px;
+    display: flex;
+    flex-direction: row; /* Alinha os inputs lado a lado */
+    gap: 10px; /* Espaçamento entre os inputs */
+    justify-content: center;
+}
+
+.form-group-3 input[type="text"], .form-group-3 input[type="number"]{
+    width: 135px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.labelEsquerda  , .labelEsquerda  {
+    font-weight: bold;
+    text-align: left;
+    width: 100%; /* Garante que o label ocupe a largura total */
+    margin: 5px 5px 0px 40px ;
+}
+
