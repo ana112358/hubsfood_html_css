@@ -1,10 +1,18 @@
 // Selecionando elementos do DOM
 const modalLogin = document.getElementById('modal'); // Modal de login
 const modalCadastro = document.getElementById('modal-cadastro'); // Modal de cadastro
+const modalCadastroConsumidor = document.getElementById('modal-cadastro-consumidor'); // Modal de cadastro de consumidor
+const modalCadastroRestaurante = document.getElementById('modal-cadastro-restaurante'); // Modal de cadastro de restaurante
 const loginBtn = document.getElementById('loginBtn');
 const closeModalLoginBtn = modalLogin.querySelector('.close-btn'); // Botão para fechar o modal de login
 const closeModalCadastroBtn = modalCadastro.querySelector('.close-btn'); // Botão para fechar o modal de cadastro
+const closeModalCadastroConsumidorBtn = modalCadastroConsumidor.querySelector('.close-btn'); // Botão para fechar o modal de cadastro de consumidor
+const closeModalCadastroRestauranteBtn = modalCadastroRestaurante.querySelector('.close-btn'); // Botão para fechar o modal de cadastro de restaurante
 const btnCriarConta = document.getElementById('criarConta'); // Botão para abrir o modal de cadastro
+const btnContinuar = document.getElementById('cadastrarContinuar'); // Botão de continuar no modal de cadastro
+const checkboxConsumidor = document.getElementById('cadastroConsumidor'); 
+const checkboxEmpresa = document.getElementById('cadastroEmpresa'); 
+
 
 // Função para abrir o modal ao clicar no botão "Logar"
 loginBtn.addEventListener('click', () => {
@@ -26,6 +34,14 @@ closeModalLoginBtn.addEventListener('click', () => {
 closeModalCadastroBtn.addEventListener('click', () => {
     modalCadastro.style.display = 'none';
 });
+closeModalCadastroConsumidorBtn.addEventListener('click', () => {
+    modalCadastroConsumidor.style.display = 'none';
+});
+
+// Função para fechar o modal de cadastro de restaurante
+closeModalCadastroRestauranteBtn.addEventListener('click', () => {
+    modalCadastroRestaurante.style.display = 'none';
+});
 
 // Fechar o modal clicando fora do conteúdo
 window.addEventListener('click', (event) => {
@@ -34,5 +50,25 @@ window.addEventListener('click', (event) => {
     }
     if (event.target === modalCadastro) {
         modalCadastro.style.display = 'none';
+    }
+    if (event.target === modalCadastroConsumidor) {
+        modalCadastroConsumidor.style.display = 'none';
+    }
+    if (event.target === modalCadastroRestaurante) {
+        modalCadastroRestaurante.style.display = 'none';
+    }
+});
+
+// Função para validar o checkbox antes de continuar
+btnContinuar.addEventListener('click', () => {
+    if (checkboxConsumidor.checked) {
+        // Aqui você pode adicionar a lógica para continuar com o processo, por exemplo:
+        modalCadastroConsumidor.style.display = 'flex';
+        modalCadastro.style.display = 'none'; // Fechar o modal de cadastro após continuar
+    } else if(checkboxEmpresa.checked){
+        modalCadastro.style.display = 'none';
+        modalCadastroRestaurante.style.display = 'flex';
+    } else {
+        alert('Por favor, marque a opção de concordar antes de continuar.');
     }
 });
