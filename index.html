@@ -89,6 +89,31 @@
         </div>
        <!--fim do modal para fazer login-->
 
+       <!-- Início do modal para cadastro -->
+<div id="modal-cadastro" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Cadastro de conta</h2>
+
+        <h3>Você é um (a)?</h3>
+
+        <div class="radio-group">
+            <input type="radio" name="tipoCadastro" id="cadastroConsumidor">
+            <label for="cadastroConsumidor">Consumidor(a)</label>
+        </div>
+
+        <div class="radio-group">
+            <input type="radio" name="tipoCadastro" id="cadastroEmpresa">
+            <label for="cadastroEmpresa">Empresa</label>
+        </div>
+
+        <hr>
+        <button type="button" id="cadastrarContinuar">
+            Continuar</button>
+    </div>
+</div>
+<!-- Fim do modal para cadastro -->
+
         <div class="body-carousel">
             <h3>Hubs Cadastrados</h3>
             <div class="owl-carousel" id="carousel1">
