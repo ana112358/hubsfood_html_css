@@ -1,5 +1,5 @@
 const cardDropdown = document.getElementById('cardDropdown');
-const payButton = document.getElementById('payButton');
+const payButton = document.getElementById('pagar');
 const confirmationMessage = document.getElementById('confirmationMessage');
 
 // Evento ao clicar no botão "Pagar"
