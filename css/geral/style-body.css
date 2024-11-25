@@ -1,5 +1,5 @@
 .main {
-    background-image: url("imagens/fachadaHubsfood.png");
+    background-image: url("../../imagens/fachadaHubsfood.png");
     background-position: top center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -118,7 +118,7 @@
 }
 
 .nossoTime{
-    background-image: url("imagens/sobreNosFundoNossoTime.png");
+    background-image: url("../../imagens/sobreNosFundoNossoTime.png");
     background-position: top center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -282,10 +282,6 @@
     color:#9D9191;
     font-size: 12px;
 }
-
-
-
-
 
 
 .body-carousel {

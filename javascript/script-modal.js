@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Adiciona um evento de clique ao botão
     finalizarCadastroBtn.addEventListener('click', function () {
         // Redireciona para a página indexLogado.html
-        window.location.href = 'indexLogado.html';
+        window.location.href = '../../templates/usuarioCliente/indexLogado.html';
     });
 });
 document.addEventListener('DOMContentLoaded', function() {
@@ -90,6 +90,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Adiciona um evento de clique ao botão
     finalizarCadastroRestaurante.addEventListener('click', function() {
         // Redireciona para a página perfilEstabelecimento.html
-        window.location.href = 'perfilEstabelecimento.html';
+        window.location.href = '../../templates/usuarioRestaurante/perfilEstabelecimento.html';
     });
 });

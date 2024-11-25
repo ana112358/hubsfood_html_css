@@ -9,17 +9,18 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-    <link rel="stylesheet" href="style-header-footer.css">
-    <link rel="stylesheet" href="style-body.css">
-    <link rel="stylesheet" href="style-carousel.css">
+    <link rel="stylesheet" href="../../css/geral/style-header-footer.css">
+    <link rel="stylesheet" href="../../css/geral/style-body.css">
+    <link rel="stylesheet" href="../../css/componentes/style-carousel.css">
 
-    <script src="script-carousel.js" defer></script>
+    <script src="../../javascript/script-carousel.js" defer></script>
+    <script src="../../javascript/scriptMenuLogado.js" defer></script>
     
     <title>Hubs</title>
 
     <style>
         .main {
-            background-image: url("imagens/fachadaHubs.png");
+            background-image: url("../../imagens/fachadaHubs.png");
         }
         .empty {
             height: 320px;
@@ -33,21 +34,31 @@
 
         <div class="container">
             <div>
-                <img src="imagens/logoMenuSuperior.png" alt="">
+                <img src="../../imagens/logoMenuSuperior.png" alt="">
             </div>
             <div>
                 <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="hubs.html">Hubs</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="contatos.html">Contatos</a></li>
+                    <li><a href="../../indexLogado.html">Início</a></li>
+                    <li><a href="../../hubsLogado.html">Hubs</a></li>
+                    <li><a href="../../sobreLogado.html">Sobre</a></li>
+                    <li><a href="../../contatosLogado.html">Contatos</a></li>
                 </ul>
             </div>
         </div>
 
+        <!--Alterar os links do menu-->
         <div class="user">
-            <button>Logar</button>
-            <img src="imagens/User.png" alt="Foto de Perfil">
+            <div class="loginIcons"><a href="#item2"><img src="../../imagens/iconAlarm.png" alt="Notificações"></a></div>
+            <div class="loginIcons"><a href="carrinho.html"><img src="../../imagens/iconCarrinho.png" alt="Carrinho"></a></div>
+            <div class="menu-container">
+                <img src="../../imagens/photoUser.png" alt="Foto de Perfil" class="menu-trigger">
+                <div class="menu" id="menu">
+                    <a href="perfilCliente.html">Perfil</a>
+                    <a href="pedidosCliente.html">Meus pedidos</a>
+                    <a href="index.html">Sair</a>
+                </div>
+            </div>
+            <span>João Domingus</span>
         </div>
 
     </div>
@@ -60,21 +71,21 @@
             <h3>Hubs Capim Macio</h3>
             <div class="owl-carousel" id="carousel1">
                 <div>
-                    <img src="imagens/icon_midway.png" alt="Midway Mall Icon">
+                    <a href="paginaHub.html"><img src="../../imagens/icon_midway.png" alt="Midway Mall Icon"></a>
                     <span>Midway Mall</span>
                 </div>
 
                 <div>
-                    <img src="imagens/icon_natalShopping.png" alt="Natal Shopping Icon">
+                    <a href="paginaHub.html"><img src="../../imagens/icon_natalShopping.png" alt="Natal Shopping Icon"></a>
                     <span>Natal Shopping</span>
                 </div>
 
                 <div>
-                    <img src="imagens/icon_partage.png" alt="Partage Shopping Icon">
+                    <a href="paginaHub.html"><img src="../../imagens/icon_partage.png" alt="Partage Shopping Icon"></a>
                     <span>Partage Norte Shopping</span>
                 </div>
                 <div>
-                    <img src="imagens/icon_praiaShopping.png" alt="Praia Shopping Icon">
+                    <a href="paginaHub.html"><img src="../../imagens/icon_praiaShopping.png" alt="Praia Shopping Icon"></a>
                     <span>Praia Shopping</span>
                 </div>
             </div>
@@ -88,21 +99,21 @@
             <h3>Hubs Ponta Negra</h3>
             <div class="owl-carousel" id="carousel2">
                 <div>
-                    <img src="imagens/icon_midway.png" alt="Midway Mall Icon">
+                    <a href="paginaHub.html"><img src="../../imagens/icon_midway.png" alt="Midway Mall Icon"></a>
                     <span>Midway Mall</span>
                 </div>
 
                 <div>
-                    <img src="imagens/icon_natalShopping.png" alt="Natal Shopping Icon">
+                    <a href="paginaHub.html"><img src="../../imagens/icon_natalShopping.png" alt="Natal Shopping Icon"></a>
                     <span>Natal Shopping</span>
                 </div>
 
                 <div>
-                    <img src="imagens/icon_partage.png" alt="Partage Shopping Icon">
+                    <a href="paginaHub.html"><img src="../../imagens/icon_partage.png" alt="Partage Shopping Icon"></a>
                     <span>Partage Norte Shopping</span>
                 </div>
                 <div>
-                    <img src="imagens/icon_praiaShopping.png" alt="Praia Shopping Icon">
+                    <a href="paginaHub.html"><img src="../../imagens/icon_praiaShopping.png" alt="Praia Shopping Icon"></a>
                     <span>Praia Shopping</span>
                 </div>
             </div>
@@ -116,21 +127,21 @@
             <h3>Hubs Potengi</h3>
             <div class="owl-carousel" id="carousel3">
                 <div>
-                    <img src="imagens/icon_midway.png" alt="Midway Mall Icon">
+                    <a href="paginaHub.html"><img src="../../imagens/icon_midway.png" alt="Midway Mall Icon"></a>
                     <span>Midway Mall</span>
                 </div>
 
                 <div>
-                    <img src="imagens/icon_natalShopping.png" alt="Natal Shopping Icon">
+                    <a href="paginaHub.html"><img src="../../imagens/icon_natalShopping.png" alt="Natal Shopping Icon"></a>
                     <span>Natal Shopping</span>
                 </div>
 
                 <div>
-                    <img src="imagens/icon_partage.png" alt="Partage Shopping Icon">
+                    <a href="paginaHub.html"><img src="../../imagens/icon_partage.png" alt="Partage Shopping Icon"></a>
                     <span>Partage Norte Shopping</span>
                 </div>
                 <div>
-                    <img src="imagens/icon_praiaShopping.png" alt="Praia Shopping Icon">
+                    <a href="paginaHub.html"><img src="../../imagens/icon_praiaShopping.png" alt="Praia Shopping Icon"></a>
                     <span>Praia Shopping</span>
                 </div>
             </div>
@@ -139,27 +150,27 @@
                 <button class="custom-next" id="carousel3-next"> →</button>
             </div>
         </div>
-        
 
         <div class="body-carousel" >
             <h3>Hubs Candelária</h3>
             <div class="owl-carousel" id="carousel4">
+                
                 <div>
-                    <img src="imagens/icon_midway.png" alt="Midway Mall Icon">
+                    <a href="paginaHub.html"><img src="../../imagens/icon_midway.png" alt="Midway Mall Icon"></a>
                     <span>Midway Mall</span>
                 </div>
 
                 <div>
-                    <img src="imagens/icon_natalShopping.png" alt="Natal Shopping Icon">
+                    <a href="paginaHub.html"><img src="../../imagens/icon_natalShopping.png" alt="Natal Shopping Icon"></a>
                     <span>Natal Shopping</span>
                 </div>
 
                 <div>
-                    <img src="imagens/icon_partage.png" alt="Partage Shopping Icon">
+                    <a href="paginaHub.html"><img src="../../imagens/icon_partage.png" alt="Partage Shopping Icon"></a>
                     <span>Partage Norte Shopping</span>
                 </div>
                 <div>
-                    <img src="imagens/icon_praiaShopping.png" alt="Praia Shopping Icon">
+                    <a href="paginaHub.html"><img src="../../imagens/icon_praiaShopping.png" alt="Praia Shopping Icon"></a>
                     <span>Praia Shopping</span>
                 </div>
             </div>
@@ -173,21 +184,21 @@
             <h3>Hubs Tirol</h3>
             <div class="owl-carousel" id="carousel5">
                 <div>
-                    <img src="imagens/icon_midway.png" alt="Midway Mall Icon">
+                    <a href="paginaHub.html"><img src="../../imagens/icon_midway.png" alt="Midway Mall Icon"></a>
                     <span>Midway Mall</span>
                 </div>
 
                 <div>
-                    <img src="imagens/icon_natalShopping.png" alt="Natal Shopping Icon">
+                    <a href="paginaHub.html"><img src="../../imagens/icon_natalShopping.png" alt="Natal Shopping Icon"></a>
                     <span>Natal Shopping</span>
                 </div>
 
                 <div>
-                    <img src="imagens/icon_partage.png" alt="Partage Shopping Icon">
+                    <a href="paginaHub.html"><img src="../../imagens/icon_partage.png" alt="Partage Shopping Icon"></a>
                     <span>Partage Norte Shopping</span>
                 </div>
                 <div>
-                    <img src="imagens/icon_praiaShopping.png" alt="Praia Shopping Icon">
+                    <a href="paginaHub.html"><img src="../../imagens/icon_praiaShopping.png" alt="Praia Shopping Icon"></a>
                     <span>Praia Shopping</span>
                 </div>
             </div>
@@ -209,17 +220,17 @@
             <div>
                 <ul>
                     <li class="footer-header">Links:</li>
-                    <li><img src="imagens/logoInstagram.png" alt=""><a href="https://www.instagram.com/"><span>Instagram</span></a></li>
-                    <li><img src="imagens/logoPinterest.png" alt=""><a href="https://br.pinterest.com/"><span>Pinterest</span></a> </li>
+                    <li><img src="../../imagens/logoInstagram.png" alt=""><a href="https://www.instagram.com/"><span>Instagram</span></a></li>
+                    <li><img src="../../imagens/logoPinterest.png" alt=""><a href="https://br.pinterest.com/"><span>Pinterest</span></a> </li>
                 </ul>
             </div>
             <div>
                 <ul>
                     <li class="footer-header">Contatos:</li>
-                    <li><img src="imagens/pinLocation.png" alt=""><span>3º piso do Instituto Metrópole Digital</span></li>
-                    <li><img src="imagens/pinPhone.png" alt=""><span>(84) 9 8888-8888</span></li>
-                    <li><img src="imagens/pinEmail.png" alt=""><span>hubsfood@gmail.com</span></li>
-                    <li><img src="imagens/pinHorario.png" alt=""><span>24h</span></li>
+                    <li><img src="../../imagens/pinLocation.png" alt=""><span>3º piso do Instituto Metrópole Digital</span></li>
+                    <li><img src="../../imagens/pinPhone.png" alt=""><span>(84) 9 8888-8888</span></li>
+                    <li><img src="../../imagens/pinEmail.png" alt=""><span>hubsfood@gmail.com</span></li>
+                    <li><img src="../../imagens/pinHorario.png" alt=""><span>24h</span></li>
                 </ul>
             </div>
         </div>
