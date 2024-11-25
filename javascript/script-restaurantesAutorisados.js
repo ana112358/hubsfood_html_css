@@ -1,11 +1,11 @@
-// Função para carregar restaurantes do localStorage
+// Função para carregar restaurantes do Local Storage
 function carregarRestaurantesAutorizados() {
-    const restaurantesAutorizados = JSON.parse(localStorage.getItem('restaurantesAutorizados')) || [];
+    const restaurantesAutorizados = JSON.parse(localStorage.getItem("restaurantesAutorizados")) || [];
+    const conteudoRestaurantes = document.querySelector(".conteudoRestaurantesAutorizados");
 
-    const conteudoRestaurantes = document.querySelector('.conteudoRestaurantesAutorizados');
-    restaurantesAutorizados.forEach(restaurante => {
+    restaurantesAutorizados.forEach((restaurante, index) => {
         const restauranteHTML = `
-            <div class="solicitacao">
+            <div class="solicitacao" data-index="${index}">
                 <h4>Nome Restaurante</h4>
                 <p>${restaurante.nome}</p>
 
@@ -22,28 +22,37 @@ function carregarRestaurantesAutorizados() {
                 <p>${restaurante.tipo}</p>
 
                 <div class="botaoDeletar">
-                    <img width="80px" src="../../imagens/pinDeletar.png" alt="">
+                    <img width="80px" src="../../imagens/pinDeletar.png" alt="Deletar">
                 </div>
             </div>
         `;
 
-        // Adiciona ao contêiner
-        conteudoRestaurantes.insertAdjacentHTML('beforeend', restauranteHTML);
+        conteudoRestaurantes.insertAdjacentHTML("beforeend", restauranteHTML);
     });
 }
 
-// Chama a função ao carregar a página
-document.addEventListener('DOMContentLoaded', carregarRestaurantesAutorizados);
+// Função para deletar restaurante do DOM e Local Storage
+function deletarRestaurante(event) {
+    const botao = event.target.closest(".botaoDeletar");
+    if (!botao) return; // Garante que o clique seja no botão
 
+    const parentDiv = botao.closest(".solicitacao");
+    const index = parentDiv.getAttribute("data-index"); // Recupera o índice
+
+    // Remove do Local Storage
+    let restaurantesAutorizados = JSON.parse(localStorage.getItem("restaurantesAutorizados")) || [];
+    restaurantesAutorizados.splice(index, 1);
+    localStorage.setItem("restaurantesAutorizados", JSON.stringify(restaurantesAutorizados));
+
+    // Remove do DOM
+    parentDiv.remove();
+}
+
+// Evento para carregar a página e adicionar os eventos de exclusão
 document.addEventListener("DOMContentLoaded", () => {
-    const deleteButtons = document.querySelectorAll(".botaoDeletar");
+    carregarRestaurantesAutorizados();
 
-    deleteButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-            const parentDiv = button.closest(".solicitacao"); // Encontra o contêiner pai
-            if (parentDiv) {
-                parentDiv.remove(); // Remove o elemento pai
-            }
-        });
-    });
+    // Adiciona o evento de clique para os botões de deletar
+    const conteudoRestaurantes = document.querySelector(".conteudoRestaurantesAutorizados");
+    conteudoRestaurantes.addEventListener("click", deletarRestaurante);
 });
