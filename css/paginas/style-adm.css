@@ -1,0 +1,219 @@
+main {
+    display: flex; /* Adicionei o display flex para alinhar os filhos lado a lado */
+    height: 100vh; /* Define a altura da tela completa */
+    flex: 1; /* Faz o conteúdo principal crescer automaticamente */
+}
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuVerticalEsquerda {
+    width: 200px; /* Largura do menu à esquerda */
+    background-color: #FFDED5;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+    justify-content: start; /* Alinha o conteúdo ao topo */
+    padding: 10px 20px; /* Reduz o padding superior e inferior */
+}
+
+/* Estilo do botão de sair */
+
+.botaoSair{
+    margin-left: -20px;
+    cursor: pointer;
+}
+
+
+/* Estilo da logo */
+.logo {
+    text-align: center;
+    margin-bottom: 10px; /* Reduz a distância entre a logo e o próximo elemento */
+}
+
+.logo img {
+    width: 100%;
+    max-width: 200px;
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo da foto cinza */
+.fotoCinza {
+    text-align: center;
+    margin-bottom: 10px; /* Reduz a distância entre a foto e o próximo elemento */
+}
+
+.fotoCinza img {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+}
+
+/* Lista de links do menu vertical */
+.listaVertical {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column; /* Organiza os itens verticalmente */
+    gap: 15px; /* Espaçamento entre cada item */
+    width: 100%;
+}
+
+
+/* Estilo do conteúdo à direita */
+.contudoDireita {
+    flex-grow: 1;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+/* Estilo do menu */
+.menuVErtical {
+    display: flex;
+    flex-direction: column; /* Organiza os links verticalmente */
+    gap: 10px; /* Espaçamento entre cada link */
+    width: 100%;
+}
+
+/* Estilo dos links do menu */
+.menuVErtical a {
+    text-align: center; /* Centraliza o texto */
+    padding: 10px 15px;
+    background-color: #FF7A55; /* Fundo laranja */
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 80px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Efeito de transição para o hover */
+}
+
+/* Efeito ao passar o mouse */
+.menuVErtical a:hover {
+    background-color: #FF8C00; /* Altera o fundo ao passar o mouse */
+}
+
+/*Conteúdo da Direita*/
+
+.cabecalhoCor{
+    background-color: #FF7A55;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    padding: 10px 0; /* Espaçamento interno no cabeçalho */
+    width: 100%; /* Certifica que ocupa toda a largura da seção de conteúdo à direita */
+    box-sizing: border-box;
+}
+.cabecalhoCor img{
+   width: 200px;
+}
+
+/* Ajuste para o container de solicitações */
+.conteudoSolicitacoes, .conteudoRestaurantesAutorizados {
+    padding: 20px;
+}
+ h3{
+    color: #9D9191 ;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Estilo para a seção de cada solicitação */
+.solicitacao {
+    background-color: #ffded5;
+    padding: 15px;
+    border-radius: 10px; /* Bordas arredondadas para o container */
+    margin-bottom: 20px; /* Espaçamento entre as solicitações */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: flex;
+    flex-direction: column; /* Organização vertical do conteúdo principal */
+    gap: 10px; /* Espaçamento entre os elementos dentro do contêiner */
+    position: relative; /* Permite posicionar os botões com base neste contêiner */
+    
+}
+
+/* Estilo dos títulos dentro da solicitação */
+.solicitacao h4 {
+    margin: 10px 0 5px 0; /* Margem entre os títulos e o conteúdo */
+    font-size: 1em; /* Tamanho do texto dos títulos */
+    color: #333; /* Cor do texto dos títulos */
+}
+
+/* Estilo para os parágrafos dentro da solicitação */
+.solicitacao p {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    border-radius: 4px; /* Bordas levemente arredondadas para os parágrafos */
+    margin-bottom: 15px; /* Espaçamento abaixo de cada parágrafo */
+    color: #333;
+}
+
+/* Estilo para o input de observações */
+.solicitacao input[type="textarea"] {
+    width: 100%;
+    height: 200px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Bordas levemente arredondadas */
+    margin-top: 5px;
+    box-sizing: border-box; /* Inclui padding e border no cálculo de largura */
+}
+
+/* Estilo para os labels dentro da solicitação */
+.solicitacao label {
+    margin: 10px 0 5px 0; /* Margem entre o label e o campo de entrada */
+    font-size: 1em; /* Tamanho do texto do label */
+    color: #333; /* Cor do texto do label */
+}
+
+.solicitacao button {
+    padding: 10px 20px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+/* Botão de autorização */
+.autorisarSolicitacao {
+    background-color: #4CAF50; /* Verde */
+    margin-right: 10px; /* Espaçamento entre os botões */
+}
+
+.autorisarSolicitacao:hover {
+    background-color: #45a049; /* Verde escuro no hover */
+}
+
+/* Botão de rejeição */
+.negarSolicitacao {
+    background-color: #FF0000; /* Vermelho */
+}
+
+.negarSolicitacao:hover {
+    background-color: #CC0000; /* Vermelho escuro no hover */
+}
+
+/* Alinhar os botões à direita */
+.botoesSolicitacao {
+    display: flex;
+    justify-content: flex-end; /* Alinha os botões à direita */
+    gap: 10px; /* Espaçamento horizontal entre os botões */
+    margin-top: 10px; /* Espaçamento entre os botões e o restante do conteúdo */
+}
+
+.botaoDeletar {
+    position: absolute; /* Permite o posicionamento usando "top", "right", etc. */
+    top: 5px; /* Alinha ao topo do contêiner pai */
+    right: 5px; /* Alinha ao lado direito do contêiner pai */
+    display: flex; /* Alinha o conteúdo do botão (imagem) centralizado */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Adiciona o cursor de clique */
+}
