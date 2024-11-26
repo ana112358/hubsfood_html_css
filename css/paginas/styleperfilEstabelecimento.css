@@ -205,3 +205,44 @@ textarea {
 .escolhaFundo{
     background-color: #9D9191;
 }
+
+
+
+
+.boxPedidos {
+    background-color: #F4F5F7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    color: #9D9191;
+}
+th, td {
+    padding: 10px;
+}
+th {
+    color: #9D9191;
+    font-weight: bold;
+}
+.status {
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    display: inline-block;
+}
+.status.pendente {
+    background-color: #fcf4b3;
+    color: orange;
+}
+.status.andamento {
+    background-color: #a8d8e6;
+    color: #003366;
+}
+.status.concluido {
+    background-color: #ffcccc;
+    color: #800000;
+}
