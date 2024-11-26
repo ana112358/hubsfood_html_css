@@ -3,20 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     
     <link rel="stylesheet" href="../../css/geral/style-header-footer.css">
     <link rel="stylesheet" href="../../css/geral/style-body.css">
     <link rel="stylesheet" href="../../css/paginas/styleperfilEstabelecimento.css">
     <link rel="stylesheet" href="../../css/componentes/style-carousel.css">
 
-    <script src="../../javascript/script-dadosPerfilEstab.js" defer></script>
+
     <script src="../../javascript/scriptMenuLogado.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="../../javascript/script-carousel.js" defer></script>
+    <script src="../../javascript/scritp-addCardapio.js" defer></script>
 
     <style>
         .main{
             background-image: none;
         }
+        .menu-container img{
+            height: 35px;
+        }
+        .body-carousel h3{
+            font-size: 16px;
+            color: #9D9191;
+        }
+
         
     </style>
 
@@ -28,7 +42,7 @@
     <div class="header container">
 
         <div class="container">
-            <div class>
+            <div>
                 <img src="../../imagens/logoMenuSuperior.png" alt="">
             </div>
         </div>
@@ -48,50 +62,61 @@
         </div>
     </div>
 
-    <main> <div  class="escolhaFundo">
-                <div class="containerEstabelecimento">
-                
-                        <div><img src="../../imagens/userEstabelecimento.png" alt="Foto de Perfil"></div>
+    <main>
+        <div class="containerEstabelecimento">
+                <h2>Itens Cadastrados</h2>
+                <div class="body-carousel">
+                    <h3>Combo 1</h3>
+                    <div class="owl-carousel" id="carousel1">
+                        <div>
+                            <img src="../../../imagens/comboFood.png" alt="Comida 1"></a>
+                            <span>Especial 1</span>
+                            <span class="preco">R$25,00 <span class="precoRiscado"></span></span>
+                        </div>
+        
+                        <div>
+                            <img src="../../../imagens/comboFood.png" alt="Comida 2"></a>
+                            <span>Especial 2</span>
+                            <span class="preco">R$28,00 <span class="precoRiscado">R$35,00</span></span>
+                        </div>
+        
+                        <div>
+                            <img src="../../../imagens/comboFood.png" alt="Comida 3"></a>
+                            <span>Especial 3</span>
+                            <span class="preco">R$30,00 <span class="precoRiscado">R$35,00</span></span>
+                        </div>
+                        <div>
+                            <img src="../../../imagens/comboFood.png" alt="Comida 4"></a>
+                            <span>Especial 4</span>
+                            <span class="preco">R$40,00 <span class="precoRiscado"></span></span>
+                        </div>
+                    </div>
+                    
                 </div>
+
+                <h3>Cadastrar novo item</h3>
+
+                <div class="boxItem">
+                    <div class="item-container">
+                        <button class="add-button1">+</button>
+                    </div>
+                    <div class="form-group1">
+                        <label for="itemName">Nome do item</label>
+                        <input type="text" id="itemName" placeholder="Digite o nome do item">
+                    </div>
+                    <div class="form-group1">
+                        <label for="descricao">Descrição</label>
+                        <input type="text" id="descricao" placeholder="Digite a descrição do item">
+                    </div>
+                    <div class="form-group1">
+                        <label for="valor">Valor</label>
+                        <input type="text" id="valor" placeholder="Digite o valor do item">
+                    </div>
+                    <button class="submit-button1" id="submitButton1" disabled>Cadastrar item</button>
+                    <div class="success-message1" id="successMessage1">Item cadastrado com sucesso!</div>
+                </div>
+                        
         </div>
-
-
-        <div class="produtos">
-
-            <div class="tituloGrupoAlimentar">
-                <h3>Combo </h3> <img src="../../imagens/pinEditar.png" alt="">
-            </div>
-            <div class="body-carousel">
-                <h3>Hubs Cadastrados</h3>
-                <div class="owl-carousel" id="carousel1">
-                    <div>
-                        <img src="../../imagens/icon_midway.png" alt="Midway Mall Icon">
-                        <span>Midway Mall</span>
-                    </div>
-    
-                    <div>
-                        <img src="../../imagens/icon_natalShopping.png" alt="Natal Shopping Icon">
-                        <span>Natal Shopping</span>
-                    </div>
-    
-                    <div>
-                        <img src="../../imagens/icon_partage.png" alt="Partage Shopping Icon">
-                        <span>Partage Norte Shopping</span>
-                    </div>
-                    <div>
-                        <img src="../../imagens/icon_praiaShopping.png" alt="Praia Shopping Icon">
-                        <span>Praia Shopping</span>
-                    </div>
-                </div>
-                <div class="custom-nav">
-                    <button class="custom-prev" id="carousel1-prev">← </button>
-                    <button class="custom-next" id="carousel1-next"> →</button>
-                </div>
-            </div>
-
-        </div>
-
-
     </main>
 
 
