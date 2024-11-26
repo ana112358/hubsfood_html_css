@@ -182,12 +182,12 @@ body {
 }
 
 /* Botão de autorização */
-.autorisarSolicitacao {
+.autorizarSolicitacao {
     background-color: #4CAF50; /* Verde */
     margin-right: 10px; /* Espaçamento entre os botões */
 }
 
-.autorisarSolicitacao:hover {
+.autorizarSolicitacao:hover {
     background-color: #45a049; /* Verde escuro no hover */
 }
 

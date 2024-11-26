@@ -11,7 +11,7 @@ function salvarRestauranteAutorizado(dados) {
 }
 
 // Adiciona eventos aos botões
-document.querySelectorAll('.autorisarSolicitacao').forEach(button => {
+document.querySelectorAll('.autorizarSolicitacao').forEach(button => {
     button.addEventListener('click', () => {
         // Captura os dados do restaurante
         const solicitacao = button.closest('.solicitacao');
