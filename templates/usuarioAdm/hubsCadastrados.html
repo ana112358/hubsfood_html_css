@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+    <link rel="stylesheet" href="../../css/geral/style-header-footer.css">
+    <link rel="stylesheet" href="../../css/geral/style-body.css">
+    <link rel="stylesheet" href="../../css/paginas/style-adm.css">
+    <link rel="stylesheet" href="../../css/componentes/style-carousel.css">
+
+    <script src="../../javascript/script-carousel.js" defer></script>
+    <script src="../../javascript/scriptMenuLogado.js" defer></script>
+    <script src="../../javascript/script-restaurantesAutorisados.js" defer></script>
+    <script src="../../javascript/script-addHub.js" defer></script>
+
+
+    <style>
+        .main{
+            background-image: none;
+        }
+        
+    </style>
+
+
+    <title>Perfil Super Usuário - Autorizados</title>
+</head>
+
+<body>
+    <div class="header container">
+
+        <div class="container">
+            <div>
+                <img src="../../imagens/logoMenuSuperior.png" alt="">
+            </div>
+        </div>
+
+        <!--Alterar os links do menu-->
+        <div class="user">
+            <div class="menu-container">
+                <img src="../../imagens/userEstabelecimento.png" alt="Foto de Perfil" class="menu-trigger">
+                <div class="menu" id="menu">
+                    <a href="solicitacoesAdm.html">Solicitações</a>
+                    <a href="restauranteAutorizados.html">Restaurantes Autorizados</a>
+                    <a href="hubsCadastrados.html">Hubs cadastrados</a>
+                    <a href="../../templates/areaNaoLogada/index.html">Sair</a>
+                </div>
+            </div>
+            <span>Administrador</span>
+        </div>
+    </div>
+
+    <main>
+
+        <div class="menuVerticalEsquerda">
+
+            <div class="botaoSair">
+               <a href="../areaNaoLogada/index.html"> <img width="120%"  src="../../imagens/botaoSair.png" alt=""></a>
+            </div>
+
+            <div class="logo">
+                <img  src="../../imagens/logoInferior.png" alt="">
+            </div>
+
+            <div class="fotoCinza">
+                <img src="../../imagens/userEstabelecimento.png" alt="">
+            </div>
+            <div class="listaVertical">
+                <div class="menuVErtical" >
+                    <a href="solicitacoesAdm.html">Solicitações</a>
+                    <a href="restauranteAutorizados.html">Restaurantes Autorizados</a>
+                    <a href="hubsCadastrados.html">Hubs cadastrados</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="contudoDireita">
+            <div class="cabecalhoCor">
+                <img src="../../imagens/userEstabelecimento.png">
+
+            </div>
+
+            <div class="hubsCadastrados"> 
+                <h3>Hubs Cadastrados</h3>
+                <div class="body-carousel">
+                    
+                    <div class="owl-carousel" id="carousel1">
+                        <div>
+                            <a href="../../templates/usuarioCliente/cardapioProdutos/pagEstabelecimento.html"><img src="../../imagens/icon_midway.png" alt="Midway Mall Icon"></a>
+                            <span>Midway Mall</span>
+                        </div>
+        
+                        <div>
+                            <a href="../../templates/usuarioCliente/cardapioProdutos/pagEstabelecimento.html"><img src="../../imagens/icon_natalShopping.png" alt="Natal Shopping Icon"></a>
+                            <span>Natal Shopping</span>
+                        </div>
+        
+                        <div>
+                            <a href="../../templates/usuarioCliente/cardapioProdutos/pagEstabelecimento.html"><img src="../../imagens/icon_partage.png" alt="Partage Shopping Icon"></a>
+                            <span>Partage Norte Shopping</span>
+                        </div>
+                        <div>
+                            <a href="../../templates/usuarioCliente/cardapioProdutos/pagEstabelecimento.html"><img src="../../imagens/icon_praiaShopping.png" alt="Praia Shopping Icon"></a>
+                            <span>Praia Shopping</span>
+                        </div>
+                    </div>
+                    <div class="custom-nav">
+                        <button class="custom-prev" id="carousel1-prev">← </button>
+                        <button class="custom-next" id="carousel1-next"> →</button>
+                    </div>
+                </div>
+
+                <h3>Cadastrar novo Hub</h3>
+
+                <div class="box">
+                    <div class="image-container">
+                        <button class="add-button">+</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="hubName">Nome do Hub</label>
+                        <input type="text" id="hubName" placeholder="Digite o nome do hub">
+                    </div>
+                    <div class="form-group">
+                        <label for="hubBairro">Bairro</label>
+                        <input type="text" id="hubBairro" placeholder="Digite o bairro">
+                    </div>
+                    <button class="submit-button" id="submitButton" disabled>Cadastrar Hub</button>
+                    <div class="success-message" id="successMessage">Hub cadastrado com sucesso!</div>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+
+
+    <div class="footer container">
+        <div class="logo">
+            <img src="../../imagens/logoInferior.png" alt="Logo Inferior">
+        </div>
+
+        <div class="container">
+            <div>
+                <ul>
+                    <li class="footer-header">Links:</li>
+                    <li><img src="../../imagens/logoInstagram.png" alt="Instagram"><a href="https://www.instagram.com/"><span>Instagram</span></a></li>
+                    <li><img src="../../imagens/logoPinterest.png" alt="Pinterest"><a href="https://br.pinterest.com/"><span>Pinterest</span></a> </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="footer-header">Contatos:</li>
+                    <li><img src="../../imagens/pinLocation.png" alt="Pin"><span>3º piso do Instituto Metrópole Digital</span></li>
+                    <li><img src="../../imagens/pinPhone.png" alt="Phone"><span>(84) 9 8888-8888</span></li>
+                    <li><img src="../../imagens/pinEmail.png" alt="Email"><span>hubsfood@gmail.com</span></li>
+                    <li><img src="../../imagens/pinHorario.png" alt="Horário"><span>24h</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="end">
+        <span>Copyright  @ 2024  All rights reserved</span>
+    </div>
+
+</body>
