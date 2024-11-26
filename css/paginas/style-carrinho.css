@@ -29,7 +29,6 @@
 th, td {
     padding: 30px;
     text-align: center;
-    border-bottom: 1px solid #ddd;
     vertical-align:middle;
 }
 
@@ -51,7 +50,7 @@ th, td {
     align-content: center;
     gap: 10px;
     justify-content:center;
-    background-color: green;
+    transform: translateY(-30px);
 }
 
 .total{
