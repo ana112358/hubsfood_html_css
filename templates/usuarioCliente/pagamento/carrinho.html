@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="../../../css/geral/style-header-footer.css">
     <link rel="stylesheet" href="../../../css/geral/style-body.css">
     <link rel="stylesheet" href="../../../css/componentes/style-addItem.css">
+    <link rel="stylesheet" href="../../../css/paginas/style-carrinho.css">
 
     <script src="../../../javascript/scriptMenuLogado.js" defer></script>
     <script src="../../../javascript/script-addItem.js" defer></script>
+    <script src="../../../javascript/script-carrinho.js" defer></script>
     <style>
         .main{
             background-image: none;
@@ -74,6 +76,102 @@
                 </div>
             </div>
         </div>
+
+        <div class="containerCarrinho">
+            <!-- Componente 1 -->
+            <h2>Fast-Food</h2>
+            <div class="component">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Total</th>
+                            <th>Remover</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="product">
+                                <img src="../../../imagens/comboFood.png" alt="Comida 1">
+                                <span>Comida 1</span>
+                            </td>
+                            <td class="price">R$40,00</td>
+                            <td class="quantity">
+                                <button class="decrement">-</button>
+                                <span class="count">1</span>
+                                <button class="increment">+</button>
+                            </td>
+                            <td class="total">R$40,00</td>
+                            <td class="remove"><button class="remove-btn">x</button></td>
+                        </tr>
+                        <tr>
+                            <td class="product">
+                                <img src="../../../imagens/comboFood.png" alt="Comida 2">
+                                <span>Comida 2</span>
+                            </td>
+                            <td class="price">R$20,00</td>
+                            <td class="quantity">
+                                <button class="decrement">-</button>
+                                <span class="count">1</span>
+                                <button class="increment">+</button>
+                            </td>
+                            <td class="total">R$20,00</td>
+                            <td class="remove"><button class="remove-btn">x</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Componente 2 -->
+            <h2>Sushi</h2>
+            <div class="component">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                            <th>Quantidade</th>
+                            <th>Total</th>
+                            <th>Remover</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="product">
+                                <img src="../../../imagens/comboFood.png" alt="Comida 1">
+                                <span>Comida 1</span>
+                            </td>
+                            <td class="price">R$35,00</td>
+                            <td class="quantity">
+                                <button class="decrement">-</button>
+                                <span class="count">1</span>
+                                <button class="increment">+</button>
+                            </td>
+                            <td class="total">R$35,00</td>
+                            <td class="remove"><button class="remove-btn">x</button></td>
+                        </tr>
+                        <tr>
+                            <td class="product">
+                                <img src="../../../imagens/comboFood.png" alt="Comida 2">
+                                <span>Comida 2</span>
+                            </td>
+                            <td class="price">R$35,00</td>
+                            <td class="quantity">
+                                <button class="decrement">-</button>
+                                <span class="count">1</span>
+                                <button class="increment">+</button>
+                            </td>
+                            <td class="total">R$35,00</td>
+                            <td class="remove"><button class="remove-btn">x</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
     </div>
 
     <div class="footer container">

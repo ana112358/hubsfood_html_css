@@ -1,0 +1,85 @@
+.containerCarrinho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    gap: 40px;
+    padding: 40px 0px;
+}
+
+.containerCarrinho h2{
+    color: #FF3700;
+    font-size: 16px;
+}
+
+.component {
+    background-color: #f4f5f7;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    color: #9D9191;
+}
+
+th, td {
+    padding: 30px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    vertical-align:middle;
+   
+   
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.product img{
+    height: 80px;
+}
+.price{
+    vertical-align: middle; 
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    justify-content:center;
+    background-color: green;
+}
+
+.total{
+    color:#FF3700;
+    vertical-align: middle; 
+}
+
+.decrement, .increment {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #FF7A55;
+    color: white;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+
+.remove-btn {
+    vertical-align: middle; 
+    background-color: #FFBC0D;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
